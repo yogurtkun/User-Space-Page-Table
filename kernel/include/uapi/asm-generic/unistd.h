@@ -660,6 +660,8 @@ __SC_COMP(__NR_recvmmsg, sys_recvmmsg, compat_sys_recvmmsg)
  * starting with this value.
  */
 #define __NR_arch_specific_syscall 244
+#define __NR_get_pagetable_layout 245
+__SYSCALL(__NR_get_pagetable_layout, sys_get_pagetable_layout)
 
 #define __NR_wait4 260
 __SC_COMP(__NR_wait4, sys_wait4, compat_sys_wait4)

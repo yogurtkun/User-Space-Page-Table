@@ -25,6 +25,12 @@ struct file_ra_state;
 struct user_struct;
 struct writeback_control;
 
+struct pagetable_layout_info {
+	uint32_t pgdir_shift;
+	uint32_t pmd_shift;
+	uint32_t page_shift;
+};
+
 #ifndef CONFIG_DISCONTIGMEM          /* Don't use mapnrs, do it properly */
 extern unsigned long max_mapnr;
 #endif
