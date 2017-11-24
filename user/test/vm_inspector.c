@@ -1,0 +1,99 @@
+#include <linux/unistd.h>
+#include <sys/syscall.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include "stdio.h"
+#include <errno.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <linux/sched.h>
+#include <sys/mman.h>
+
+struct pagetable_layout_info {
+     uint32_t pgdir_shift;
+     uint32_t pmd_shift;
+     uint32_t page_shift;
+};
+
+#define __NR_get_pagetable_layout 245
+
+#define __NR_expose_page_table 246
+
+int main(int argc, char const *argv[])
+{
+	struct pagetable_layout_info pgtbl_info;
+	int info_size = sizeof(struct pagetable_layout_info);
+
+	long x = syscall(__NR_get_pagetable_layout, &pgtbl_info, info_size);
+
+	if(x<0) {
+		printf("get pagetable layout information failed!");
+		return -1;
+	}
+
+	// printf("pgdir_shift:\t%" PRIu32 "\n", pgtbl_info->pgdir_shift);
+	// printf("pmd_shift:\t%" PRIu32 "\n", pgtbl_info->pmd_shift);
+	// printf("page_shift:\t%" PRIu32 "\n", pgtbl_info->page_shift);
+
+	pid_t pid;
+	unsigned long *fake_pgd = NULL;
+	unsigned long *fake_pmds = NULL;
+	unsigned long *page_table_addr = NULL;
+	unsigned long begin_vaddr;
+	unsigned long end_vaddr;
+
+	/****to do: heck the arguments****/
+
+	pid = atoi(argv[3]);
+	begin_vaddr = atoi(argv[4]);
+	end_vaddr = atoi(argv[5]);
+
+	unsigned long interval = end_vaddr - begin_vaddr;
+	unsigned int pgd_entries = 1+(interval>>pgtbl_info.pgdir_shift);
+	unsigned int pgd_entry_size = 1<<(pgtbl_info.page_shift- 
+		(pgtbl_info.pgdir_shift-pgtbl_info.pmd_shift));
+
+
+	fake_pgd = mmap(NULL, pgd_entries * pgd_entry_size,
+  					PROT_WRITE | PROT_READ,
+  					MAP_ANONYMOUS | MAP_SHARED, -1, 0);
+	
+	if (fake_pgd == MAP_FAILED) {
+		printf("Error: mmap\n");
+		return -1;
+	}	
+
+	fake_pmds = mmap(NULL, 1<<pgtbl_info.page_shift,
+					PROT_READ | PROT_WRITE,
+					MAP_ANONYMOUS | MAP_SHARED, -1, 0);
+
+	if (fake_pmds == MAP_FAILED) {
+		printf("Error: mmap\n");
+		return -1;
+	}
+
+	page_table_addr = mmap(NULL, 1<<pgtbl_info.page_shift,
+			PROT_READ, 
+			MAP_ANONYMOUS | MAP_SHARED, -1, 0);
+
+	if (page_table_addr == MAP_FAILED) {
+		printf("Error: mmap\n");
+		return -1;
+	}
+
+	long y = syscall(__NR_expose_page_table, pid,
+                    (unsigned long) fake_pgd,
+                    (unsigned long) fake_pmds,
+                    (unsigned long) page_table_addr,
+                    (unsigned long) begin_vaddr,
+                    (unsigned long) end_vaddr);
+
+	if (y<0) {
+		printf("expose pagetable failed!");
+		return -1;
+	}
+
+	return 0;
+
+}
