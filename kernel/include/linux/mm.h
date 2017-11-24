@@ -1863,3 +1863,15 @@ static inline void setup_nr_node_ids(void) {}
 
 #endif /* __KERNEL__ */
 #endif /* _LINUX_MM_H */
+
+struct expose_info{
+	pid_t pid;
+	unsigned long fake_pgd;
+	unsigned long fake_pmds;
+	unsigned long page_table_addr;
+	unsigned long begin_vaddr;
+	unsigned long end_vaddr;
+	vm_area_struct * pgd_vma;
+	vm_area_struct * pmds_vma;
+	vm_area_struct * ptes_vma;
+};

@@ -663,6 +663,9 @@ __SC_COMP(__NR_recvmmsg, sys_recvmmsg, compat_sys_recvmmsg)
 #define __NR_get_pagetable_layout 245
 __SYSCALL(__NR_get_pagetable_layout, sys_get_pagetable_layout)
 
+#define __NR_expose_page_table 246
+__SYSCALL(__NR_expose_page_table,sys_expose_page_table)
+
 #define __NR_wait4 260
 __SC_COMP(__NR_wait4, sys_wait4, compat_sys_wait4)
 #define __NR_prlimit64 261
