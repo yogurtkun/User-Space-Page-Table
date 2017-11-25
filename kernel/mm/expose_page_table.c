@@ -25,8 +25,56 @@ SYSCALL_DEFINE2(get_pagetable_layout, struct pagetable_layout_info __user *,
 	return 0;
 }
 
+int remap_every_page_pte(expose_info * all_info, unsigned long addr_need_to_map, unsigned long map_des_addr){
+	struct vm_area_struct * vma;
+
+	vma = find_vma(current->mm, map_des_addr);
+
+	if(remap_pfn_range(vma,map_des_addr,__pa(addr_need_to_map),PAGE_SIZE,vma->vm_page_prot)){
+		return -EINVAL;
+	}
+	return 0;
+}
+
 int pte_remap(struct expose_info * all_info, vm_area_struct * now_area){
-	//need to be done;
+	unsigned long temp;
+	unsigned long now_addr;
+	unsigned long offset;
+
+	unsigned long pgd_entry, pmd_entry, pte_entry;
+
+	unsigned long user_pmd,user_pte;
+
+	unsigned long des_pgd,des_pmd;
+
+	now_addr = now_addr->vm_start;
+	offset = all_info->begin_vaddr;
+
+	do{
+		temp = pgd_addr_end(now_addr,now_area->vm_end);
+		des_pgd = pgd_offset(now_area->mm, now_addr);
+		if(pgd_none_or_clear_bad(des_pgd))
+			continue;
+
+		des_pmd = pmd_offset(des_pgd,now_addr);
+		if (pmd_none_or_clear_bad(des_pmd))
+			continue;
+
+		pgd_entry = (pgd_index(now_addr) - pgd_index(offset))*sizeof(unsigned long) + all_info->fake_pgd;
+		user_pmd = all_info->fake_pmds + (pgd_index(now_addr) - pgd_index(offset)) * PAGE_SIZE
+		*(unsigned long *)pgd_entry = user_pmd;
+
+		pmd_entry = *(unsigned long *)pgd_entry + pmd_index(now_addr) * sizeof(unsigned long);
+		user_pte = all_info->page_table_addr 
+			+ (pgd_index(now_addr) - pgd_index(offset))*sizeof(unsigned long) * PTRS_PER_PGD * PAGE_SIZE
+			+ pmd_index(now_addr) * PAGE_SIZE;
+		*(unsigned long *)pmd_entry = user_pte;
+
+		if(remap_every_page_pte(all_info,now_addr,user_pte) < 0 )
+			return -EFAULT;
+
+
+	}while(now_addr = temp,temp!=now_area->vm_end);
 }
 
 vm_area_struct *  check_and_get_vma(unsigned long address,unsigned long size){
@@ -96,7 +144,7 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 			return -EFAULT;
 		}
 		now_area = now_area->vm_next;
-	}while(now_area)
+	}while(now_area->vm_start < end_vaddr)
 
 	up_read(&(mm->mmap_sem));
 	kfree(all_info);
