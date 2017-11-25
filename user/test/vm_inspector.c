@@ -53,9 +53,12 @@ int main(int argc, char const *argv[])
 	unsigned int pgd_entries = 1+(interval>>pgtbl_info.pgdir_shift);
 	unsigned int pgd_entry_size = 1<<(pgtbl_info.page_shift- 
 		(pgtbl_info.pgdir_shift-pgtbl_info.pmd_shift));
+	unsigned long pgd_size = pgd_entries * pgd_entry_size;
+	unsigned long pmds_size = pgd_entries * (1<<pgtbl_info.page_shift);
+	unsigned long ptes_size = pgd_entries * (1<<pgtbl_info.pmd_shift);
 
 
-	fake_pgd = mmap(NULL, pgd_entries * pgd_entry_size,
+	fake_pgd = mmap(NULL, pgd_size,
   					PROT_WRITE | PROT_READ,
   					MAP_ANONYMOUS | MAP_SHARED, -1, 0);
 	
@@ -64,7 +67,7 @@ int main(int argc, char const *argv[])
 		return -1;
 	}	
 
-	fake_pmds = mmap(NULL, 1<<pgtbl_info.page_shift,
+	fake_pmds = mmap(NULL, pmds_size,
 					PROT_READ | PROT_WRITE,
 					MAP_ANONYMOUS | MAP_SHARED, -1, 0);
 
@@ -73,7 +76,7 @@ int main(int argc, char const *argv[])
 		return -1;
 	}
 
-	page_table_addr = mmap(NULL, 1<<pgtbl_info.page_shift,
+	page_table_addr = mmap(NULL, ptes_size,
 			PROT_READ, 
 			MAP_ANONYMOUS | MAP_SHARED, -1, 0);
 
@@ -93,6 +96,8 @@ int main(int argc, char const *argv[])
 		printf("expose pagetable failed!");
 		return -1;
 	}
+
+	
 
 	return 0;
 
