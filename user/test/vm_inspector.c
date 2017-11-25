@@ -110,11 +110,11 @@ int main(int argc, char const *argv[])
 	//for (;page<page_table_addr+ptes_size;++page) {
 		page = page_table_addr+i;
 		va_addr = begin_vaddr + i*(1<<pgtbl_info.page_shift);
-		if (*page==NULL) 
+		if ((*page)==0) 
 			continue;
 
-		printf("0x%x ", va_addr);
-		printf("0x%x ", *page);
+		printf("0x%lx ", va_addr);
+		printf("0x%lx ", *page);
 		printf("\n");
 
 	}
