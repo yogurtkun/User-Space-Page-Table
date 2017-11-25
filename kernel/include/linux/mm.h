@@ -31,6 +31,18 @@ struct pagetable_layout_info {
 	uint32_t page_shift;
 };
 
+struct expose_info{
+	struct task_struct * task;
+	unsigned long fake_pgd;
+	unsigned long fake_pmds;
+	unsigned long page_table_addr;
+	unsigned long begin_vaddr;
+	unsigned long end_vaddr;
+	struct vm_area_struct * pgd_vma;
+	struct vm_area_struct * pmds_vma;
+	struct vm_area_struct * ptes_vma;
+};
+
 #ifndef CONFIG_DISCONTIGMEM          /* Don't use mapnrs, do it properly */
 extern unsigned long max_mapnr;
 #endif
@@ -1864,14 +1876,4 @@ static inline void setup_nr_node_ids(void) {}
 #endif /* __KERNEL__ */
 #endif /* _LINUX_MM_H */
 
-struct expose_info{
-	pid_t pid;
-	unsigned long fake_pgd;
-	unsigned long fake_pmds;
-	unsigned long page_table_addr;
-	unsigned long begin_vaddr;
-	unsigned long end_vaddr;
-	vm_area_struct * pgd_vma;
-	vm_area_struct * pmds_vma;
-	vm_area_struct * ptes_vma;
-};
+

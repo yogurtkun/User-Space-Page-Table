@@ -1,5 +1,8 @@
 #include <linux/syscalls.h>
 #include <linux/mm.h>
+#include <linux/kernel.h>
+#include <linux/sched.h>
+#include <linux/slab.h>
 //#include <linux/mm_types.h>
 //#include <linux/pfn.h>
 
@@ -25,7 +28,7 @@ SYSCALL_DEFINE2(get_pagetable_layout, struct pagetable_layout_info __user *,
 	return 0;
 }
 
-int remap_every_page_pte(expose_info * all_info, unsigned long addr_need_to_map, unsigned long map_des_addr){
+int remap_every_page_pte(struct expose_info * all_info, unsigned long addr_need_to_map, unsigned long map_des_addr){
 	struct vm_area_struct * vma;
 
 	vma = find_vma(current->mm, map_des_addr);
@@ -36,32 +39,42 @@ int remap_every_page_pte(expose_info * all_info, unsigned long addr_need_to_map,
 	return 0;
 }
 
-int pte_remap(struct expose_info * all_info, vm_area_struct * now_area){
+int pte_remap(struct expose_info * all_info, struct vm_area_struct * now_area){
 	unsigned long temp;
 	unsigned long now_addr;
 	unsigned long offset;
+	struct mm_struct * mm;
 
-	unsigned long pgd_entry, pmd_entry, pte_entry;
+	unsigned long pgd_entry, pmd_entry;
 
 	unsigned long user_pmd,user_pte;
 
-	unsigned long des_pgd,des_pmd;
+	pgd_t * des_pgd;
+	pud_t * des_pud;
+	pmd_t * des_pmd;
 
-	now_addr = now_addr->vm_start;
+	mm = all_info->task->mm;
+
+	now_addr = now_area->vm_start;
 	offset = all_info->begin_vaddr;
 
 	do{
 		temp = pgd_addr_end(now_addr,now_area->vm_end);
-		des_pgd = pgd_offset(now_area->mm, now_addr);
+		des_pgd = pgd_offset(mm, now_addr);
 		if(pgd_none_or_clear_bad(des_pgd))
 			continue;
 
-		des_pmd = pmd_offset(des_pgd,now_addr);
+		des_pud = pud_offset(des_pgd,now_addr);
+		if(pud_none_or_clear_bad(des_pud))
+			continue;
+
+		des_pmd = pmd_offset(des_pud,now_addr);
 		if (pmd_none_or_clear_bad(des_pmd))
 			continue;
 
 		pgd_entry = (pgd_index(now_addr) - pgd_index(offset))*sizeof(unsigned long) + all_info->fake_pgd;
-		user_pmd = all_info->fake_pmds + (pgd_index(now_addr) - pgd_index(offset)) * PAGE_SIZE
+		user_pmd = all_info->fake_pmds + (pgd_index(now_addr) - pgd_index(offset)) * PAGE_SIZE;
+		/*It should use copy_to_user, will debug it futher*/
 		*(unsigned long *)pgd_entry = user_pmd;
 
 		pmd_entry = *(unsigned long *)pgd_entry + pmd_index(now_addr) * sizeof(unsigned long);
@@ -75,9 +88,11 @@ int pte_remap(struct expose_info * all_info, vm_area_struct * now_area){
 
 
 	}while(now_addr = temp,temp!=now_area->vm_end);
+
+	return 0;
 }
 
-vm_area_struct *  check_and_get_vma(unsigned long address,unsigned long size){
+struct vm_area_struct *  check_and_get_vma(unsigned long address,unsigned long size){
 	struct vm_area_struct * vma;
 
 	vma = find_vma(current->mm,address);
@@ -92,14 +107,14 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	unsigned long, fake_pmds, unsigned long, page_table_addr,
 	unsigned long, begin_vaddr, unsigned long, end_vaddr){
 
-	task_struct * expose_task;
+	struct task_struct * expose_task;
 	struct mm_struct * mm;
-	vm_area_struct * pgd_vma;
-	vm_area_struct * pmds_vma;
-	vm_area_struct * ptes_vma;
+	struct vm_area_struct * pgd_vma;
+	struct vm_area_struct * pmds_vma;
+	struct vm_area_struct * ptes_vma;
 	struct expose_info * all_info;
 	unsigned long pgd_size,pmds_size,ptes_size;
-	vm_area_struct * now_area;
+	struct vm_area_struct * now_area;
 
 	if(pid < 0)
 		return -EINVAL;
@@ -144,7 +159,7 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 			return -EFAULT;
 		}
 		now_area = now_area->vm_next;
-	}while(now_area->vm_start < end_vaddr)
+	}while(now_area->vm_start < end_vaddr);
 
 	up_read(&(mm->mmap_sem));
 	kfree(all_info);
