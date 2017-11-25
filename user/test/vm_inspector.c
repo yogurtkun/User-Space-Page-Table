@@ -20,8 +20,10 @@ struct pagetable_layout_info {
 
 #define __NR_expose_page_table 246
 
+
 int main(int argc, char const *argv[])
 {
+	int i=0;
 	struct pagetable_layout_info pgtbl_info;
 	int info_size = sizeof(struct pagetable_layout_info);
 
@@ -97,7 +99,28 @@ int main(int argc, char const *argv[])
 		return -1;
 	}
 
-	
+
+	unsigned long *page;
+	//page = page_table_addr;
+
+	unsigned long va_addr;
+	//va_addr = begin_vaddr;
+
+	for (i=0;i<ptes_size;++i) {
+	//for (;page<page_table_addr+ptes_size;++page) {
+		page = page_table_addr+i;
+		va_addr = begin_vaddr + i*(1<<pgtbl_info.page_shift);
+		if (*page==NULL) 
+			continue;
+
+		printf("0x%x ", va_addr);
+		printf("0x%x ", *page);
+		printf("\n");
+
+	}
+
+
+
 
 	return 0;
 
