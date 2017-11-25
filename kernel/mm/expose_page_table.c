@@ -1,7 +1,7 @@
 #include <linux/syscalls.h>
 #include <linux/mm.h>
 #include <linux/kernel.h>
-#include <string.h>
+// #include <string.h>
 #include <linux/sched.h>
 #include <linux/slab.h>
 //#include <linux/mm_types.h>
