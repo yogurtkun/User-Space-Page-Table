@@ -51,6 +51,8 @@ int main(int argc, char const *argv[])
 	begin_vaddr = atoi(argv[4]);
 	end_vaddr = atoi(argv[5]);
 
+	int fd = open("/dev/zero", O_RDONLY);
+
 	unsigned long interval = end_vaddr - begin_vaddr;
 	unsigned int pgd_entries = 1+(interval>>pgtbl_info.pgdir_shift);
 	unsigned int pgd_entry_size = 1<<(pgtbl_info.page_shift- 
@@ -80,12 +82,14 @@ int main(int argc, char const *argv[])
 
 	page_table_addr = mmap(NULL, ptes_size,
 			PROT_READ, 
-			MAP_ANONYMOUS | MAP_SHARED, -1, 0);
+			MAP_ANONYMOUS | MAP_SHARED, fd, 0);
 
 	if (page_table_addr == MAP_FAILED) {
 		printf("Error: mmap\n");
 		return -1;
 	}
+
+	close(fd);
 
 	long y = syscall(__NR_expose_page_table, pid,
                     (unsigned long) fake_pgd,
