@@ -32,6 +32,8 @@ SYSCALL_DEFINE2(get_pagetable_layout, struct pagetable_layout_info __user *,
 int remap_every_page_pte(struct expose_info * all_info, unsigned long addr_need_to_map, unsigned long map_des_addr){
 	struct vm_area_struct * vma;
 
+	printk("Before every remap pte!!!!!!!!!!!!!!!\n");
+
 	vma = find_vma(current->mm, map_des_addr);
 
 	if(remap_pfn_range(vma,map_des_addr,__pa(addr_need_to_map),PAGE_SIZE,vma->vm_page_prot)){
@@ -58,6 +60,8 @@ int pte_remap(struct expose_info * all_info, struct vm_area_struct * now_area){
 
 	now_addr = now_area->vm_start;
 	offset = all_info->begin_vaddr;
+
+	printk("Before while loop in pte_remap!!!!!!!!!!!!!!!!\n");
 
 	do{
 		temp = pgd_addr_end(now_addr,now_area->vm_end);
@@ -117,6 +121,8 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	unsigned long pgd_size,pmds_size,ptes_size;
 	struct vm_area_struct * now_area;
 
+	printk("In syscall!!!!!!\n");
+
 	if(pid < 0)
 		return -EINVAL;
 
@@ -138,9 +144,16 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	if(!pgd_vma || !pmds_vma || !ptes_vma)
 		return -EINVAL;
 
+	printk("Before memset!!!!!!!!\n");
+
 	memset((void *)fake_pgd,0,pgd_size);
+	printk("1It is wrong here\n");
 	memset((void *)fake_pmds,0,pmds_size);
+	printk("2It is wrong here\n");
+	printk("%lu; %lu; %lu size\n",pgd_size,pmds_size, ptes_size);
+	printk("%lu of fake_pgd\n",page_table_addr);
 	memset((void *)page_table_addr,0,ptes_size);
+	printk("3It is wrong here\n");
 
 	all_info = kmalloc(sizeof(struct expose_info),GFP_KERNEL);
 	all_info->task = expose_task;
@@ -156,6 +169,8 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	down_read(&(mm->mmap_sem));
 
 	now_area = find_vma(expose_task->mm,begin_vaddr);
+
+	printk("Before while loop!!!!!!!!!!!!!!111\n");
 
 	do{
 		if(pte_remap(all_info,now_area) < 0){
