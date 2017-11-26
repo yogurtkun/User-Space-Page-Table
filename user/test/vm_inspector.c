@@ -49,8 +49,8 @@ int main(int argc, char const *argv[])
 	/****to do: heck the arguments****/
 
 	pid = atoi(argv[3]);
-	begin_vaddr = atoi(argv[4]);
-	end_vaddr = atoi(argv[5]);
+	begin_vaddr = strtol(argv[4],NULL,10);
+	end_vaddr = strtol(argv[5],NULL,10);
 
 	int fd = open("/dev/zero", O_RDONLY);
 
