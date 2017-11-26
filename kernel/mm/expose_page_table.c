@@ -29,14 +29,15 @@ SYSCALL_DEFINE2(get_pagetable_layout, struct pagetable_layout_info __user *,
 	return 0;
 }
 
-int remap_every_page_pte(struct expose_info * all_info, unsigned long addr_need_to_map, unsigned long map_des_addr){
+int remap_every_page_pte(struct expose_info * all_info, pte_t * addr_need_to_map, unsigned long map_des_addr){
 	struct vm_area_struct * vma;
 
 	printk("Before every remap pte!!!!!!!!!!!!!!!\n");
+	printk("%lu !!!!!",pte_val(*addr_need_to_map));
 
 	vma = find_vma(current->mm, map_des_addr);
 
-	if(remap_pfn_range(vma,map_des_addr,__pa(addr_need_to_map),PAGE_SIZE,vma->vm_page_prot)){
+	if(remap_pfn_range(vma,map_des_addr,(__pa(addr_need_to_map)>>PAGE_SHIFT),PAGE_SIZE,vma->vm_page_prot)){
 		return -EINVAL;
 	}
 	return 0;
@@ -55,6 +56,7 @@ int pte_remap(struct expose_info * all_info, struct vm_area_struct * now_area){
 	pgd_t * des_pgd;
 	pud_t * des_pud;
 	pmd_t * des_pmd;
+	pte_t * des_pte;
 
 	mm = all_info->task->mm;
 
@@ -77,6 +79,8 @@ int pte_remap(struct expose_info * all_info, struct vm_area_struct * now_area){
 		if (pmd_none_or_clear_bad(des_pmd))
 			continue;
 
+		des_pte = pte_offset_map(des_pmd,now_addr);
+
 		pgd_entry = (pgd_index(now_addr) - pgd_index(offset))*sizeof(unsigned long) + all_info->fake_pgd;
 		user_pmd = all_info->fake_pmds + (pgd_index(now_addr) - pgd_index(offset)) * PAGE_SIZE;
 		/*It should use copy_to_user, will debug it futher*/
@@ -84,11 +88,13 @@ int pte_remap(struct expose_info * all_info, struct vm_area_struct * now_area){
 
 		pmd_entry = *(unsigned long *)pgd_entry + pmd_index(now_addr) * sizeof(unsigned long);
 		user_pte = all_info->page_table_addr 
-			+ (pgd_index(now_addr) - pgd_index(offset))*sizeof(unsigned long) * PTRS_PER_PGD * PAGE_SIZE
+			+ (pgd_index(now_addr) - pgd_index(offset)) * PTRS_PER_PGD * PAGE_SIZE
 			+ pmd_index(now_addr) * PAGE_SIZE;
 		*(unsigned long *)pmd_entry = user_pte;
 
-		if(remap_every_page_pte(all_info,now_addr,user_pte) < 0 )
+		user_pte = (now_addr >> PAGE_SHIFT) * sizeof(unsigned long) + all_info->page_table_addr;
+
+		if(remap_every_page_pte(all_info,des_pte,user_pte) < 0 )
 			return -EFAULT;
 
 
@@ -144,16 +150,10 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	if(!pgd_vma || !pmds_vma || !ptes_vma)
 		return -EINVAL;
 
-	printk("Before memset!!!!!!!!\n");
 
 	memset((void *)fake_pgd,0,pgd_size);
-	printk("1It is wrong here\n");
 	memset((void *)fake_pmds,0,pmds_size);
-	printk("2It is wrong here\n");
-	printk("%lu; %lu; %lu size\n",pgd_size,pmds_size, ptes_size);
-	printk("%lu of fake_pgd\n",page_table_addr);
-	memset((void *)page_table_addr,0,ptes_size);
-	printk("3It is wrong here\n");
+
 
 	all_info = kmalloc(sizeof(struct expose_info),GFP_KERNEL);
 	all_info->task = expose_task;
@@ -169,8 +169,6 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	down_read(&(mm->mmap_sem));
 
 	now_area = find_vma(expose_task->mm,begin_vaddr);
-
-	printk("Before while loop!!!!!!!!!!!!!!111\n");
 
 	do{
 		if(pte_remap(all_info,now_area) < 0){
