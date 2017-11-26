@@ -138,9 +138,11 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	if(!pgd_vma || !pmds_vma || !ptes_vma)
 		return -EINVAL;
 
-	memset((void *)fake_pgd,0,pgd_size);
-	memset((void *)fake_pmds,0,pmds_size);
-	memset((void *)page_table_addr,0,ptes_size);
+	// memset((void *)fake_pgd,0,pgd_size);
+	// memset((void *)fake_pmds,0,pmds_size);
+	// memset((void *)page_table_addr,0,ptes_size);
+
+	printk("up to here\n");
 
 	all_info = kmalloc(sizeof(struct expose_info),GFP_KERNEL);
 	all_info->task = expose_task;
