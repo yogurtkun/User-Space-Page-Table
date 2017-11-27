@@ -21,6 +21,14 @@ struct pagetable_layout_info {
 
 #define __NR_expose_page_table 246
 
+#define PAGE_SHIFT 12
+
+#define PTRS_PER_PTE	512
+
+int pte_index(unsigned long addr)
+{
+	return ((addr) >> PAGE_SHIFT) & (PTRS_PER_PTE - 1);
+}
 
 int main(int argc, char const *argv[])
 {
@@ -109,20 +117,29 @@ int main(int argc, char const *argv[])
 	//page = page_table_addr;
 
 	unsigned long va_addr;
-	//va_addr = begin_vaddr;
+	va_addr = begin_vaddr;
 
 	for (i=0;i<ptes_size/sizeof(unsigned long);++i) {
 	//for (;page<page_table_addr+ptes_size;++page) {
+		
+		if (i<pte_index(begin_vaddr))
+			continue;
+		if (i+1-pte_index(begin_vaddr)>((end_vaddr-begin_vaddr) >> PAGE_SHIFT))
+			break;
 		page = page_table_addr+i;
-		va_addr = begin_vaddr + i*(1<<pgtbl_info.page_shift);
+		va_addr = begin_vaddr + (i-pte_index(begin_vaddr))*(1<<pgtbl_info.page_shift);
+
 		if ((*page)==0) 
 			continue;
+
 
 		printf("0x%lx ", va_addr);
 		printf("0x%lx ", *page);
 		printf("\n");
 
 	}
+
+
 
 
 
