@@ -49,8 +49,8 @@ int main(int argc, char const *argv[])
 	/****to do: heck the arguments****/
 
 	pid = atoi(argv[3]);
-	begin_vaddr = strtol(argv[4],NULL,10);
-	end_vaddr = strtol(argv[5],NULL,10);
+	begin_vaddr = strtol(argv[4],NULL,16);
+	end_vaddr = strtol(argv[5],NULL,16);
 
 	int fd = open("/dev/zero", O_RDONLY);
 
@@ -111,7 +111,7 @@ int main(int argc, char const *argv[])
 	unsigned long va_addr;
 	//va_addr = begin_vaddr;
 
-	for (i=0;i<ptes_size;++i) {
+	for (i=0;i<ptes_size/sizeof(unsigned long);++i) {
 	//for (;page<page_table_addr+ptes_size;++page) {
 		page = page_table_addr+i;
 		va_addr = begin_vaddr + i*(1<<pgtbl_info.page_shift);
