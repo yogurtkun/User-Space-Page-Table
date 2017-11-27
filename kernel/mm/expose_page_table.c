@@ -33,7 +33,8 @@ int remap_every_page_pte(struct expose_info * all_info, pte_t * addr_need_to_map
 	struct vm_area_struct * vma;
 
 	printk("Before every remap pte!!!!!!!!!!!!!!!\n");
-	printk("%lu !!!!!",pte_val(*addr_need_to_map));
+	printk("%lu !!!!!\n",pte_val(*addr_need_to_map));
+	printk("pfn:%x !!!!!\n",(__pa(addr_need_to_map)>>PAGE_SHIFT));
 
 	vma = find_vma(current->mm, map_des_addr);
 
@@ -60,8 +61,8 @@ int pte_remap(struct expose_info * all_info){
 
 	mm = all_info->task->mm;
 
-	now_addr = all_info->begin_vaddr;
-	offset = all_info->begin_vaddr;
+	now_addr = (all_info->begin_vaddr)>>PMD_SHIFT<<PMD_SHIFT;
+	offset = now_addr;
 
 	printk("Before while loop in pte_remap!!!!!!!!!!!!!!!!\n");
 
@@ -74,13 +75,19 @@ int pte_remap(struct expose_info * all_info){
 		if(pgd_none_or_clear_bad(des_pgd))
 			continue;
 
+		printk("pgd:%x\n",des_pgd);
+
 		des_pud = pud_offset(des_pgd,now_addr);
 		if(pud_none_or_clear_bad(des_pud))
 			continue;
 
+		printk("pud:%x\n",des_pud);
+
 		des_pmd = pmd_offset(des_pud,now_addr);
 		if (pmd_none_or_clear_bad(des_pmd))
 			continue;
+
+		printk("pmd:%x\n",des_pmd);
 
 		des_pte = pte_offset_map(des_pmd,now_addr);
 
