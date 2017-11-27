@@ -43,7 +43,7 @@ int remap_every_page_pte(struct expose_info * all_info, pte_t * addr_need_to_map
 	return 0;
 }
 
-int pte_remap(struct expose_info * all_info, struct vm_area_struct * now_area){
+int pte_remap(struct expose_info * all_info){
 	unsigned long temp;
 	unsigned long now_addr;
 	unsigned long offset;
@@ -60,13 +60,16 @@ int pte_remap(struct expose_info * all_info, struct vm_area_struct * now_area){
 
 	mm = all_info->task->mm;
 
-	now_addr = now_area->vm_start;
+	now_addr = all_info->begin_vaddr;
 	offset = all_info->begin_vaddr;
 
 	printk("Before while loop in pte_remap!!!!!!!!!!!!!!!!\n");
 
 	do{
-		temp = pgd_addr_end(now_addr,now_area->vm_end);
+
+		printk("%x address!!!!\n",(unsigned) now_addr);
+
+		temp = now_addr+PMD_SIZE;
 		des_pgd = pgd_offset(mm, now_addr);
 		if(pgd_none_or_clear_bad(des_pgd))
 			continue;
@@ -92,13 +95,12 @@ int pte_remap(struct expose_info * all_info, struct vm_area_struct * now_area){
 			+ pmd_index(now_addr) * PAGE_SIZE;
 		*(unsigned long *)pmd_entry = user_pte;
 
-		user_pte = (now_addr >> PAGE_SHIFT) * sizeof(unsigned long) + all_info->page_table_addr;
+		user_pte = ((now_addr-offset) >> PAGE_SHIFT) * sizeof(unsigned long) + all_info->page_table_addr;
 
 		if(remap_every_page_pte(all_info,des_pte,user_pte) < 0 )
-			return -EFAULT;
+			 return -EFAULT;
 
-
-	}while(now_addr = temp,temp!=now_area->vm_end);
+	}while(now_addr = temp,now_addr < all_info->end_vaddr);
 
 	return 0;
 }
@@ -125,7 +127,6 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	struct vm_area_struct * ptes_vma;
 	struct expose_info * all_info;
 	unsigned long pgd_size,pmds_size,ptes_size;
-	struct vm_area_struct * now_area;
 
 	printk("In syscall!!!!!!\n");
 
@@ -168,16 +169,11 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 
 	down_read(&(mm->mmap_sem));
 
-	now_area = find_vma(expose_task->mm,begin_vaddr);
-
-	do{
-		if(pte_remap(all_info,now_area) < 0){
-			up_read(&(mm->mmap_sem));
-			kfree(all_info);
-			return -EFAULT;
-		}
-		now_area = now_area->vm_next;
-	}while(now_area->vm_start < end_vaddr);
+	if(pte_remap(all_info) < 0){
+		up_read(&(mm->mmap_sem));
+		kfree(all_info);
+		return -EFAULT;
+	}
 
 	up_read(&(mm->mmap_sem));
 	kfree(all_info);
