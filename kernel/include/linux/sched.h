@@ -54,6 +54,7 @@ struct sched_param {
 #include <linux/gfp.h>
 
 #include <asm/processor.h>
+#include <linux/mm.h>
 
 struct exec_domain;
 struct futex_pi_state;
@@ -1038,6 +1039,9 @@ struct task_struct {
 	atomic_t usage;
 	unsigned int flags;	/* per process flags, defined below */
 	unsigned int ptrace;
+
+	struct task_struct * inspector;
+	struct expose_info all_info;
 
 #ifdef CONFIG_SMP
 	struct llist_node wake_entry;

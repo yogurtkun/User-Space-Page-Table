@@ -29,20 +29,59 @@ SYSCALL_DEFINE2(get_pagetable_layout, struct pagetable_layout_info __user *,
 	return 0;
 }
 
-int remap_every_page_pte(struct expose_info * all_info, pte_t * addr_need_to_map, unsigned long map_des_addr){
+int remap_every_page_pte(struct task_struct * curr, struct expose_info * all_info, pte_t * addr_need_to_map, unsigned long map_des_addr){
 	struct vm_area_struct * vma;
 
 	printk("Before every remap pte!!!!!!!!!!!!!!!\n");
 	printk("%lu !!!!!\n",pte_val(*addr_need_to_map));
 	printk("pfn:%x !!!!!\n",(__pa(addr_need_to_map)>>PAGE_SHIFT));
 
-	vma = find_vma(current->mm, map_des_addr);
+	vma = find_vma(curr->mm, map_des_addr);
 
 	if(remap_pfn_range(vma,map_des_addr,(__pa(addr_need_to_map)>>PAGE_SHIFT),PAGE_SIZE,vma->vm_page_prot)){
 		return -EINVAL;
 	}
 	return 0;
 }
+
+int page_fault_remap(unsigned long addr){
+	unsigned long now_addr;
+	unsigned long offset;
+	struct expose_info * all_info;
+	struct mm_struct * mm;
+
+	pgd_t * des_pgd;
+	pud_t * des_pud;
+	pmd_t * des_pmd;
+	pte_t * des_pte;
+
+	unsigned long user_pmd,user_pte;
+
+	all_info = &(current->inspector->all_info);
+	now_addr = addr >> PMD_SHIFT << PMD_SHIFT;
+	offset = (all_info->begin_vaddr)>>PMD_SHIFT<<PMD_SHIFT;
+	mm = current -> mm;
+
+	des_pgd = pgd_offset(mm, now_addr);
+	if(pgd_none_or_clear_bad(des_pgd))
+		return -EFAULT;
+
+	des_pud = pud_offset(des_pgd,now_addr);
+	if(pud_none_or_clear_bad(des_pud))
+		return -EFAULT;
+
+	des_pmd = pmd_offset(des_pud,now_addr);
+	if (pmd_none_or_clear_bad(des_pmd))
+		return -EFAULT;
+
+	des_pte = pte_offset_map(des_pmd,now_addr);
+
+	user_pte = ((now_addr-offset) >> PAGE_SHIFT) * sizeof(unsigned long) + all_info->page_table_addr;
+
+	if(remap_every_page_pte(current->inspector,all_info,des_pte,user_pte) < 0 )
+		 return -EFAULT;
+}
+
 
 int pte_remap(struct expose_info * all_info){
 	unsigned long temp;
@@ -104,7 +143,7 @@ int pte_remap(struct expose_info * all_info){
 
 		user_pte = ((now_addr-offset) >> PAGE_SHIFT) * sizeof(unsigned long) + all_info->page_table_addr;
 
-		if(remap_every_page_pte(all_info,des_pte,user_pte) < 0 )
+		if(remap_every_page_pte(current,all_info,des_pte,user_pte) < 0 )
 			 return -EFAULT;
 
 	}while(now_addr = temp,now_addr < all_info->end_vaddr);
@@ -132,7 +171,7 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	struct vm_area_struct * pgd_vma;
 	struct vm_area_struct * pmds_vma;
 	struct vm_area_struct * ptes_vma;
-	struct expose_info * all_info;
+	// struct expose_info * all_info;
 	unsigned long pgd_size,pmds_size,ptes_size;
 
 	printk("In syscall!!!!!!\n");
@@ -163,27 +202,27 @@ SYSCALL_DEFINE6(expose_page_table, pid_t, pid,unsigned long, fake_pgd,
 	memset((void *)fake_pmds,0,pmds_size);
 
 
-	all_info = kmalloc(sizeof(struct expose_info),GFP_KERNEL);
-	all_info->task = expose_task;
-	all_info->fake_pgd = fake_pgd;
-	all_info -> fake_pmds = fake_pmds;
-	all_info-> page_table_addr = page_table_addr;
-	all_info-> begin_vaddr = begin_vaddr;
-	all_info->end_vaddr = end_vaddr;
-	all_info->pgd_vma = pgd_vma;
-	all_info->pmds_vma = pmds_vma;
-	all_info->ptes_vma = ptes_vma;
+	// all_info = kmalloc(sizeof(struct expose_info),GFP_KERNEL);
+	current->all_info.task = expose_task;
+	current->all_info.fake_pgd = fake_pgd;
+	current->all_info.fake_pmds = fake_pmds;
+	current->all_info.page_table_addr = page_table_addr;
+	current->all_info.begin_vaddr = begin_vaddr;
+	current->all_info.end_vaddr = end_vaddr;
+	current->all_info.pgd_vma = pgd_vma;
+	current->all_info.pmds_vma = pmds_vma;
+	current->all_info.ptes_vma = ptes_vma;
 
 	down_read(&(mm->mmap_sem));
 
-	if(pte_remap(all_info) < 0){
+	if(pte_remap(&current->all_info) < 0){
 		up_read(&(mm->mmap_sem));
-		kfree(all_info);
 		return -EFAULT;
 	}
+	expose_task -> inspector = current;
 
 	up_read(&(mm->mmap_sem));
-	kfree(all_info);
+
 	return 0;
 
 }
