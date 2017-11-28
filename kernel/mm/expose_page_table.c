@@ -51,7 +51,7 @@ int page_fault_remap(unsigned long addr){
 	pmd_t * des_pmd;
 	pte_t * des_pte;
 
-	unsigned long user_pmd,user_pte;
+	unsigned long user_pte;
 
 	all_info = &(current->inspector->all_info);
 	now_addr = addr >> PMD_SHIFT << PMD_SHIFT;
@@ -76,6 +76,7 @@ int page_fault_remap(unsigned long addr){
 
 	if(remap_every_page_pte(current->inspector,all_info,des_pte,user_pte) < 0 )
 		 return -EFAULT;
+	return 0;
 }
 
 
