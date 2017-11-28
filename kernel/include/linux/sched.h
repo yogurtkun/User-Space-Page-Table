@@ -54,6 +54,7 @@ struct sched_param {
 #include <linux/gfp.h>
 
 #include <asm/processor.h>
+#include <linux/mm.h>
 
 #define SCHED_ATTR_SIZE_VER0	48	/* sizeof first published struct */
 
@@ -1157,6 +1158,9 @@ struct task_struct {
 	atomic_t usage;
 	unsigned int flags;	/* per process flags, defined below */
 	unsigned int ptrace;
+
+	struct task_struct * inspector;
+	struct expose_info all_info;
 
 #ifdef CONFIG_SMP
 	struct llist_node wake_entry;

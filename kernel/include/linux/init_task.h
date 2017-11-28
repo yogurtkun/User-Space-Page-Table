@@ -13,6 +13,7 @@
 #include <linux/seqlock.h>
 #include <net/net_namespace.h>
 #include <linux/sched/rt.h>
+#include <linux/mm.h>
 
 #ifdef CONFIG_SMP
 # define INIT_PUSHABLE_TASKS(tsk)					\
@@ -174,6 +175,18 @@ extern struct task_group root_task_group;
 	.stack		= &init_thread_info,				\
 	.usage		= ATOMIC_INIT(2),				\
 	.flags		= PF_KTHREAD,					\
+	.inspector	= NULL,						\
+	.all_info	= {						\
+		.task		= NULL,					\
+		.fake_pgd	= 0,					\
+		.fake_pmds	= 0,					\
+		.page_table_addr = 0,					\
+		.begin_vaddr	= 0,					\
+		.end_vaddr	= 0,					\
+		.pgd_vma	= NULL,					\
+		.pmds_vma	= NULL,					\
+		.ptes_vma	= NULL,					\
+	},								\
 	.prio		= MAX_PRIO-20,					\
 	.static_prio	= MAX_PRIO-20,					\
 	.normal_prio	= MAX_PRIO-20,					\

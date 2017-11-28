@@ -29,6 +29,26 @@ struct file_ra_state;
 struct user_struct;
 struct writeback_control;
 
+struct pagetable_layout_info {
+	uint32_t pgdir_shift;
+	uint32_t pmd_shift;
+	uint32_t page_shift;
+};
+
+struct expose_info{
+	struct task_struct * task;
+	unsigned long fake_pgd;
+	unsigned long fake_pmds;
+	unsigned long page_table_addr;
+	unsigned long begin_vaddr;
+	unsigned long end_vaddr;
+	struct vm_area_struct * pgd_vma;
+	struct vm_area_struct * pmds_vma;
+	struct vm_area_struct * ptes_vma;
+};
+
+extern int page_fault_remap(unsigned long addr);
+
 #ifndef CONFIG_DISCONTIGMEM          /* Don't use mapnrs, do it properly */
 extern unsigned long max_mapnr;
 #endif
@@ -1905,3 +1925,5 @@ extern struct reclaim_param reclaim_task_anon(struct task_struct *task,
 
 #endif /* __KERNEL__ */
 #endif /* _LINUX_MM_H */
+
+
