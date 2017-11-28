@@ -1,0 +1,2 @@
+Zygote and Android app share many common resources, such as fonts and many libs. The shared parts are listed in `same.txt', all the shared parts only need to be read and the apps do not write on them.
+The Android app has some specific resources such as (for Email app) Email.apk, they are specific for the process and the apps write upon them. The specific objects are listed in `diff_426.txt' (Zygote)  and `diff_8030.txt' (email).

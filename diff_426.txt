@@ -1,0 +1,30 @@
+7f81017000-7f81019000 rw-p 00000000 00:04 68940                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f8122f000-7f81231000 rw-p 00000000 00:04 66642                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f8112a000-7f8112b000 ---p 00000000 00:00 0 
+7f81019000-7f8101a000 ---p 00000000 00:00 0 
+12e07000-32c00000 ---p 00207000 00:04 9458                               /dev/ashmem/dalvik-main space (deleted)
+7f81020000-7f81123000 rw-p 00000000 00:00 0                              [stack:8385]
+7f8101f000-7f81020000 ---p 00000000 00:00 0 
+7f81123000-7f81124000 ---p 00000000 00:00 0 
+7f81236000-7f81237000 ---p 00000000 00:00 0 
+7f80f12000-7f80f13000 ---p 00000000 00:00 0 
+7f81124000-7f81128000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+76973000-799fc000 ---p 00001000 00:04 13869                              /dev/ashmem/dalvik-non moving space (deleted)
+7f8112b000-7f8112c000 ---p 00000000 00:00 0 
+7f8133b000-7f8133d000 rw-p 00000000 00:04 66641                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f80f14000-7f81017000 rw-p 00000000 00:00 0                              [stack:8386]
+7f81232000-7f81236000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f8101e000-7f8101f000 ---p 00000000 00:00 0 
+7f81238000-7f8133b000 rw-p 00000000 00:00 0                              [stack:8383]
+7f81231000-7f81232000 ---p 00000000 00:00 0 
+32c01000-52c00000 ---p 00001000 00:04 9459                               /dev/ashmem/dalvik-main space 1 (deleted)
+7f80f13000-7f80f14000 ---p 00000000 00:00 0 
+7f8101a000-7f8101e000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f7be1b000-7f7be3b000 rw-p 00000000 00:04 13866                          /dev/ashmem/dalvik-rosalloc page map (deleted)
+7f80f0e000-7f80f12000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+32c00000-32c01000 rw-p 00000000 00:04 9459                               /dev/ashmem/dalvik-main space 1 (deleted)
+12c00000-12e07000 rw-p 00000000 00:04 9458                               /dev/ashmem/dalvik-main space (deleted)
+7f80f0d000-7f80f0e000 ---p 00000000 00:00 0 
+7f8112c000-7f8122f000 rw-p 00000000 00:00 0                              [stack:8384]
+7f81128000-7f8112a000 rw-p 00000000 00:04 66643                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f81237000-7f81238000 ---p 00000000 00:00 0 

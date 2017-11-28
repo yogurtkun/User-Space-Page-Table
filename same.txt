@@ -1,0 +1,860 @@
+7f78e63000-7f78e7d000 r--p 00000000 b3:18 240                            /system/fonts/NotoSansBengaliUI-Bold.ttf
+7f7b991000-7f7b993000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f79391000-7f793dc000 r--p 00000000 b3:18 1686                           /system/fonts/Roboto-Light.ttf
+7f79050000-7f79056000 r--p 00000000 b3:18 1728                           /system/fonts/NotoSansThaiUI-Regular.ttf
+7f84302000-7f84303000 rw-p 00000000 00:00 0                              [anon:linker_alloc]
+7f76bc9000-7f76ed7000 r--p 00000000 b3:18 1735                           /system/fonts/NotoSansJP-Regular.otf
+7f8533d000-7f8534c000 ---p 00000000 00:00 0 
+7f7980e000-7f7980f000 r--p 00009000 b3:18 2279                           /system/lib64/libqdutils.so
+7f6d979000-7f6d988000 ---p 00000000 00:00 0 
+7f7b8cd000-7f7b8dc000 ---p 00000000 00:00 0 
+7f7982e000-7f7983d000 ---p 00000000 00:00 0 
+7f755ce000-7f75d62000 r--p 00000000 b3:18 1761                           /system/fonts/slim.ttf
+7f86172000-7f86173000 rw-p 00026000 b3:18 2036                           /system/lib64/libutils.so
+7f7b8bf000-7f7b8cd000 r-xp 00000000 b3:18 3660                           /system/vendor/lib64/libqmi_client_qmux.so
+7f83e32000-7f83e42000 ---p 00000000 00:00 0 
+7f8618b000-7f8619a000 ---p 00000000 00:00 0 
+7f7d4ce000-7f7d4de000 ---p 00000000 00:00 0 
+7f8466e000-7f8467d000 ---p 00000000 00:00 0 
+7f797db000-7f797e2000 r-xp 00000000 b3:18 2193                           /system/lib64/libqservice.so
+7f837d8000-7f83d43000 rw-p 00000000 00:00 0 
+7f79017000-7f79039000 r--p 00000000 b3:18 1723                           /system/fonts/NotoSansDevanagari-Regular.ttf
+7f83e2d000-7f83e2e000 rw-p 0004c000 b3:18 2085                           /system/lib64/libopus.so
+7f6d953000-7f6d955000 r--p 0001e000 b3:18 4384                           /system/lib64/libsoftkeymasterdevice.so
+7f76a09000-7f76bc9000 r--p 00000000 b3:18 228                            /system/fonts/NotoSansKR-Regular.otf
+7f7b8dc000-7f7b8de000 r--p 0000e000 b3:18 3660                           /system/vendor/lib64/libqmi_client_qmux.so
+7f84f7f000-7f84f80000 rw-p 0023a000 b3:18 2267                           /system/lib64/libicui18n.so
+7f7d4de000-7f7d4e0000 r--p 00059000 b3:18 459                            /system/lib64/libjavacore.so
+7f83f1c000-7f83f2b000 ---p 00000000 00:00 0 
+7f82ed9000-7f82eda000 rw-p 00001000 b3:18 2245                           /system/lib64/libstagefright_enc_common.so
+7f81439000-7f81534000 rw-p 00000000 00:04 13870                          /dev/ashmem/dalvik-allocspace non moving space live-bitmap 4 (deleted)
+7f7b9f6000-7f7b9fa000 r-xp 00000000 b3:18 460                            /system/lib64/libdrmbitmap.huawei.so
+7f755bd000-7f755ce000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f8534d000-7f8534e000 rw-p 0000d000 b3:18 2204                           /system/lib64/libhardware_legacy.so
+7f75e1d000-7f75e39000 r--p 00000000 b3:18 1741                           /system/fonts/DroidSansMono.ttf
+7f78c34000-7f78c3a000 r--p 00000000 b3:18 162                            /system/fonts/NotoSansCham-Bold.ttf
+7f86200000-7f86201000 rw-p 00000000 00:00 0                              [anon:linker_alloc_64]
+7f841f9000-7f841fa000 rw-p 00003000 b3:18 2066                           /system/lib64/libstdc++.so
+71d76000-74408000 r--p 00000000 b3:1a 97925                              /data/dalvik-cache/arm64/system@framework@boot.oat
+7f83f05000-7f83f14000 ---p 00000000 00:00 0 
+7f845dc000-7f845dd000 rw-p 0000e000 b3:18 4375                           /system/lib64/libperfhub_client.so
+7f8613b000-7f8613c000 r--p 0000a000 b3:18 2227                           /system/lib64/liblog.so
+7f82e56000-7f82e57000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f78eb0000-7f78ec9000 r--p 00000000 b3:18 259                            /system/fonts/NotoSansBengali-Regular.ttf
+7f84110000-7f84111000 rw-p 0003b000 b3:18 4545                           /system/vendor/lib64/libqc-opt.so
+7f6d7a2000-7f6d7a3000 rw-p 0002b000 b3:18 3619                           /system/vendor/lib64/libqmiservices.so
+7f6da42000-7f6da4f000 r-xp 00000000 b3:18 2256                           /system/lib64/libjhead.so
+7f7b954000-7f7b964000 ---p 00000000 00:00 0 
+7f6d7d3000-7f6d8d4000 rw-p 00000000 00:00 0 
+7f75f42000-7f75f53000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f842aa000-7f842ae000 r-xp 00000000 b3:18 2033                           /system/lib64/libeffects.so
+7f86121000-7f8612b000 r-xp 00000000 b3:18 2227                           /system/lib64/liblog.so
+7f8620a000-7f8620b000 r--p 00030000 b3:18 671                            /system/bin/linker64
+7f82eac000-7f82ead000 rw-p 00024000 b3:18 4377                           /system/lib64/libprotobuf-cpp-lite.so
+7f7b913000-7f7b922000 ---p 00000000 00:00 0 
+7f6d989000-7f6d98a000 rw-p 00003000 b3:18 4370                           /system/lib64/libkeystore-engine.so
+7f83f8b000-7f83f99000 r-xp 00000000 b3:18 2260                           /system/lib64/libhuawei_secure.so
+7f85484000-7f85493000 ---p 00000000 00:00 0 
+7f6d725000-7f6d726000 r-xp 00000000 b3:18 2132                           /system/lib64/libhwdeviceinfo.so
+7f78f0a000-7f78f13000 r--p 00000000 b3:18 1744                           /system/fonts/NotoSansTamilUI-Regular.ttf
+7f853bc000-7f853bd000 rw-p 0000d000 b3:18 2257                           /system/lib64/libGLESv1_CM.so
+7f842ff000-7f84301000 r--p 0001e000 b3:18 2101                           /system/lib64/libstagefright_foundation.so
+7f841d3000-7f841d4000 rw-p 00036000 b3:18 2136                           /system/lib64/libpng.so
+7f7b8ff000-7f7b900000 rw-p 00004000 b3:18 3472                           /system/vendor/lib64/libqmi_encdec.so
+7f7905b000-7f79061000 r--p 00000000 b3:18 1641                           /system/fonts/NotoSansThai-Regular.ttf
+7f83d86000-7f83dbc000 r-xp 00000000 b3:18 2069                           /system/lib64/libstagefright_omx.so
+7f7a6ca000-7f7a6cb000 r--p 00010000 b3:18 1099                           /system/vendor/lib64/egl/libGLESv2_adreno.so
+7f6d749000-7f6d74a000 rw-p 00002000 b3:18 2270                           /system/lib64/libfm_jni.so
+7f85c20000-7f85c30000 ---p 00000000 00:00 0 
+7f78be6000-7f78bea000 r--p 00000000 b3:18 252                            /system/fonts/NotoSansGlagolitic-Regular.ttf
+7f75fa1000-7f75fea000 r--p 00000000 b3:18 1647                           /system/fonts/RobotoCondensed-Bold.ttf
+7f84511000-7f84512000 rw-p 00003000 b3:18 2190                           /system/lib64/libservices.huawei.so
+7f85306000-7f85307000 rw-p 00059000 b3:18 2158                           /system/lib64/libsonivox.so
+7f79056000-7f7905b000 r--p 00000000 b3:18 1759                           /system/fonts/NotoSansThai-Bold.ttf
+7f7d679000-7f7de7a000 rw-p 00000000 00:04 9475                           /dev/ashmem/dalvik-live stack (deleted)
+7f82eda000-7f82edd000 r-xp 00000000 b3:18 2243                           /system/lib64/libpowermanager.so
+7f85e01000-7f85ed8000 r-xp 00000000 b3:18 461                            /system/lib64/libc++.so
+7f75e8b000-7f75ec8000 r--p 00000000 b3:18 1742                           /system/fonts/NotoSerif-Italic.ttf
+7f84b0c000-7f84b1d000 r--p 00428000 b3:18 455                            /system/lib64/libpdfium.so
+7f8469b000-7f846a0000 r--p 0000d000 b3:18 4381                           /system/lib64/libradio.so
+7f84cf7000-7f84d07000 ---p 00000000 00:00 0 
+7f79106000-7f79123000 r--p 00000000 b3:18 4190                           /system/fonts/NotoNaskhArabic-Regular.ttf
+7f81db0000-7f81db1000 rw-p 00000000 00:00 0                              [anon:linker_alloc_vector]
+7f85330000-7f8533d000 r-xp 00000000 b3:18 2204                           /system/lib64/libhardware_legacy.so
+7f78cea000-7f78cf4000 r--p 00000000 b3:18 166                            /system/fonts/NotoSansKhmerUI-Regular.ttf
+7f83f89000-7f83f8a000 r--p 00002000 b3:18 448                            /system/lib64/liboeminfo.so
+7f7b6da000-7f7b6f1000 r-xp 00000000 b3:18 4505                           /system/vendor/lib64/egl/libESXEGL_adreno.so
+7f8467d000-7f84681000 r--p 0000d000 b3:18 2164                           /system/lib64/libsoundtrigger.so
+7f83fa9000-7f83faa000 r--p 0000e000 b3:18 2260                           /system/lib64/libhuawei_secure.so
+7f83e2e000-7f83e32000 r-xp 00000000 b3:18 4371                           /system/lib64/libmediautils.so
+7f85f3e000-7f85f43000 r--p 00041000 b3:18 2141                           /system/lib64/libwilhelm.so
+7f84303000-7f84304000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f84628000-7f8462a000 r-xp 00000000 b3:18 2225                           /system/lib64/libprocessgroup.so
+7f85a76000-7f85ab1000 r-xp 00000000 b3:18 468                            /system/lib64/libcamera_client.so
+7f6da92000-7f6da93000 rw-p 00022000 b3:18 2040                           /system/lib64/libmtp.so
+7f85c3a000-7f85c49000 ---p 00000000 00:00 0 
+7f6da8f000-7f6da92000 r--p 0001f000 b3:18 2040                           /system/lib64/libmtp.so
+7f78bc0000-7f78bd9000 r--p 00000000 b3:18 211                            /system/fonts/NotoSansLepcha-Regular.ttf
+7f6d726000-7f6d735000 ---p 00000000 00:00 0 
+7f79043000-7f79047000 r--p 00000000 b3:18 1757                           /system/fonts/NotoSansArmenian-Bold.ttf
+7f85103000-7f85113000 ---p 00000000 00:00 0 
+7f85f44000-7f860a4000 r-xp 00000000 b3:18 458                            /system/lib64/libandroid_runtime.so
+70ed0000-71d76000 rw-p 00000000 b3:1a 97924                              /data/dalvik-cache/arm64/system@framework@boot.art
+7f7b900000-7f7b901000 r-xp 00000000 b3:18 3901                           /system/vendor/lib64/libsmemlog.so
+7f81771000-7f81772000 rw-p 00001000 b3:18 2162                           /system/lib64/libsigchain.so
+7f7a585000-7f7a586000 rw-p 0000c000 b3:18 4504                           /system/vendor/lib64/egl/eglSubDriverAndroid.so
+7a7fb000-9a7fb000 rw-p 00000000 00:04 9468                               /dev/ashmem/dalvik-free list large object space (deleted)
+7f85c31000-7f85c32000 rw-p 00008000 b3:18 2027                           /system/lib64/libnetutils.so
+7f8529d000-7f852f5000 r-xp 00000000 b3:18 2158                           /system/lib64/libsonivox.so
+7f85cca000-7f85ccc000 r--p 0003c000 b3:18 2030                           /system/lib64/libandroidfw.so
+7f85126000-7f8512a000 rw-p 00000000 00:00 0 
+7f83f2d000-7f83f38000 r-xp 00000000 b3:18 2028                           /system/lib64/libnbaio.so
+7f7a6bb000-7f7a6ca000 ---p 00000000 00:00 0 
+7f6f1aa000-7f755aa000 ---p 00000000 00:00 0 
+7f83eb0000-7f83eb1000 rw-p 0002a000 b3:18 2123                           /system/lib64/libRScpp.so
+7f7f4f4000-7f7fcf4000 rw-p 00000000 00:04 9467                           /dev/ashmem/dalvik-allocspace main rosalloc space 1 mark-bitmap 2 (deleted)
+7f85b78000-7f85be0000 r-xp 00000000 b3:18 2102                           /system/lib64/libgui.so
+7f83d75000-7f83d84000 ---p 00000000 00:00 0 
+7f8556b000-7f85a10000 r-xp 00000000 b3:18 2217                           /system/lib64/libskia.so
+7f78cc1000-7f78cc9000 r--p 00000000 b3:18 219                            /system/fonts/NotoSansLaoUI-Bold.ttf
+7f84b3e000-7f84b3f000 rw-p 0000b000 b3:18 2263                           /system/lib64/libaudioutils.so
+7f6d926000-7f6d927000 rw-p 0000c000 b3:18 4369                           /system/lib64/libkeymaster_messages.so
+7f84f80000-7f85103000 r-xp 00000000 b3:18 2122                           /system/lib64/libicuuc.so
+7f7a728000-7f7a72a000 r--p 00000000 00:00 0 
+7f7d4e4000-7f7d4e5000 r--p 00000000 00:00 0 
+7f79340000-7f79391000 r--p 00000000 b3:18 1706                           /system/fonts/Roboto-LightItalic.ttf
+7f7b6c6000-7f7b6d6000 ---p 00000000 00:00 0 
+7f841d4000-7f841d5000 r-xp 00000000 b3:18 2153                           /system/lib64/libsync.so
+7f84301000-7f84302000 rw-p 00020000 b3:18 2101                           /system/lib64/libstagefright_foundation.so
+7f84b5c000-7f84b6b000 ---p 00000000 00:00 0 
+7f6d737000-7f6d739000 r-xp 00000000 b3:18 2270                           /system/lib64/libfm_jni.so
+7f84652000-7f84661000 ---p 00000000 00:00 0 
+7f846a0000-7f846a1000 rw-p 00012000 b3:18 4381                           /system/lib64/libradio.so
+7f82e78000-7f82e9b000 r-xp 00000000 b3:18 4377                           /system/lib64/libprotobuf-cpp-lite.so
+7f78f9b000-7f78fb9000 r--p 00000000 b3:18 186                            /system/fonts/NotoSansGujarati-Regular.ttf
+7f83f19000-7f83f1c000 r-xp 00000000 b3:18 2039                           /system/lib64/libspeexresampler.so
+7f6db8a000-7f6f1aa000 r--s 00000000 b3:18 4418                           /system/usr/icu/icudt55l.dat
+7f86170000-7f86172000 r--p 00024000 b3:18 2036                           /system/lib64/libutils.so
+7f78cc9000-7f78cd1000 r--p 00000000 b3:18 187                            /system/fonts/NotoSansLaoUI-Regular.ttf
+7f7908d000-7f790af000 r--p 00000000 b3:18 220                            /system/fonts/NotoSansEthiopic-Regular.ttf
+7f861ca000-7f861fb000 r-xp 00000000 b3:18 671                            /system/bin/linker64
+7f6da7f000-7f6da8f000 ---p 00000000 00:00 0 
+7f7d47b000-7f7d47c000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f755bc000-7f755bd000 rw-p 00002000 b3:18 2145                           /system/lib64/libwebviewchromium_loader.so
+7f7b8eb000-7f7b8ef000 r-xp 00000000 b3:18 3472                           /system/vendor/lib64/libqmi_encdec.so
+7f78bf9000-7f78c05000 r--p 00000000 b3:18 257                            /system/fonts/NotoSansCanadianAboriginal-Regular.ttf
+5563436000-5563437000 r--p 00004000 b3:18 731                            /system/bin/app_process64
+7f85a5c000-7f85a64000 r-xp 00000000 b3:18 2229                           /system/lib64/libcamera_metadata.so
+7f7b964000-7f7b965000 r--p 00002000 b3:18 2218                           /system/lib64/libqmi_oem_api.so
+7f7b98f000-7f7b990000 r--p 00001000 b3:18 2272                           /system/lib64/libhwtheme_jni.so
+7f85b60000-7f85b70000 ---p 00000000 00:00 0 
+7f8377d000-7f8378c000 ---p 00000000 00:00 0 
+7f7611b000-7f7612c000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f7a725000-7f7a726000 r--p 00008000 b3:18 1100                           /system/vendor/lib64/egl/libGLESv1_CM_adreno.so
+7f83e44000-7f83e61000 r-xp 00000000 b3:18 463                            /system/lib64/libdrmframework.so
+7f81d7b000-7f81d7d000 rw-p 00603000 b3:18 2235                           /system/lib64/libart.so
+7f79477000-7f796c1000 r--s 00dcc000 b3:18 1173                           /system/framework/framework-res-hwext.apk
+7f6d7d1000-7f6d7d2000 r--p 0001e000 b3:18 3483                           /system/vendor/lib64/libdiag.so
+7f82eb7000-7f82ec6000 ---p 00000000 00:00 0 
+7f760d2000-7f7611b000 r--p 00000000 b3:18 1687                           /system/fonts/RobotoCondensed-Light.ttf
+7f8378c000-7f837bb000 r--p 0088e000 b3:18 4334                           /system/lib64/lib_k3_ffmpeg.so
+7f75dea000-7f75dfb000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f85acf000-7f85b27000 r-xp 00000000 b3:18 2021                           /system/lib64/libinputflinger.so
+7f78f13000-7f78f1c000 r--p 00000000 b3:18 1746                           /system/fonts/NotoSansTamil-Bold.ttf
+7f6da2d000-7f6da41000 r--p 0002f000 b3:18 2187                           /system/lib64/libexif.so
+7f7b30d000-7f7b639000 r-xp 00000000 b3:18 4507                           /system/vendor/lib64/egl/libESXGLESv2_adreno.so
+7f79039000-7f7903e000 r--p 00000000 b3:18 169                            /system/fonts/NotoSansGeorgian-Bold.ttf
+7f84bd2000-7f84be1000 ---p 00000000 00:00 0 
+7f7d4e5000-7f7d4e7000 rw-p 00000000 00:04 11115                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f844c3000-7f844d2000 ---p 00000000 00:00 0 
+7f81db2000-7f81db3000 rw-p 00000000 00:00 0                              [anon:linker_alloc_vector]
+7f78be4000-7f78be6000 r--p 00000000 b3:18 167                            /system/fonts/NotoSansHanunoo-Regular.ttf
+7f6cf25000-7f6d725000 rw-p 00000000 00:04 13867                          /dev/ashmem/dalvik-allocspace main rosalloc space live-bitmap 3 (deleted)
+767fa000-767fb000 rw-p 04a84000 b3:1a 97925                              /data/dalvik-cache/arm64/system@framework@boot.oat
+7f78b7c000-7f78b80000 r--p 00000000 b3:18 213                            /system/fonts/NotoSansTaiViet-Regular.ttf
+7f842bd000-7f842be000 r--p 00003000 b3:18 2033                           /system/lib64/libeffects.so
+7f7be3b000-7f7d45b000 r--s 00000000 b3:18 4418                           /system/usr/icu/icudt55l.dat
+7f85cfd000-7f85d35000 r-xp 00000000 b3:18 2196                           /system/lib64/libm.so
+7f7971c000-7f7971d000 rw-p 00001000 b3:18 2073                           /system/lib64/libjnigraphics.so
+7f85cdf000-7f85ce0000 rw-p 00002000 b3:18 2148                           /system/lib64/libmemtrack.so
+7f7b8de000-7f7b8df000 rw-p 00010000 b3:18 3660                           /system/vendor/lib64/libqmi_client_qmux.so
+7f6d9d5000-7f6d9d6000 r--p 00003000 b3:18 2000                           /system/lib64/libmedia_jni.huawei.so
+7f84612000-7f84613000 r--p 00001000 b3:18 4382                           /system/lib64/libradio_metadata.so
+7f79747000-7f79748000 r--p 0001a000 b3:18 2174                           /system/lib64/libcompiler_rt.so
+7f7ba0a000-7f7ba0b000 rw-p 00004000 b3:18 460                            /system/lib64/libdrmbitmap.huawei.so
+799fc000-7a7fb000 rw-p 0308a000 00:04 13869                              /dev/ashmem/dalvik-non moving space (deleted)
+7f6db03000-7f6db8a000 r--s 00000000 b3:18 1221                           /system/usr/share/zoneinfo/tzdata
+7f861fd000-7f861fe000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f86204000-7f86208000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f78ee5000-7f78ef3000 r--p 00000000 b3:18 232                            /system/fonts/NotoSansMalayalam-Bold.ttf
+7f7b924000-7f7b92e000 r-xp 00000000 b3:18 3567                           /system/vendor/lib64/libqmi_cci.so
+7f7942c000-7f79477000 r--p 00000000 b3:18 1724                           /system/fonts/Roboto-Thin.ttf
+7f797ff000-7f7980e000 ---p 00000000 00:00 0 
+7f7a575000-7f7a584000 ---p 00000000 00:00 0 
+7f84f5b000-7f84f6b000 ---p 00000000 00:00 0 
+7f84601000-7f84603000 r-xp 00000000 b3:18 4382                           /system/lib64/libradio_metadata.so
+7f76ed7000-7f771cb000 r--p 00000000 b3:18 4205                           /system/fonts/NotoSansTC-Regular.otf
+558487a000-55865d2000 rw-p 00000000 00:00 0                              [heap]
+7f6d9bf000-7f6d9c1000 rw-p 00028000 b3:18 2159                           /system/lib64/libjavacrypto.so
+76972000-76973000 rw-p 00000000 00:04 13869                              /dev/ashmem/dalvik-non moving space (deleted)
+7f79066000-7f7906b000 r--p 00000000 b3:18 1732                           /system/fonts/NotoSansHebrew-Regular.ttf
+7f7b703000-7f7b704000 rw-p 0001a000 b3:18 4505                           /system/vendor/lib64/egl/libESXEGL_adreno.so
+7f78e48000-7f78e63000 r--p 00000000 b3:18 227                            /system/fonts/NotoSansTelugu-Regular.ttf
+7f842f0000-7f842ff000 ---p 00000000 00:00 0 
+7f841fa000-7f841fb000 rw-p 00000000 00:00 0                              [anon:linker_alloc_64]
+7f78f1c000-7f78f25000 r--p 00000000 b3:18 1747                           /system/fonts/NotoSansTamil-Regular.ttf
+7f75dfb000-7f75e0c000 r--p 00000000 b3:18 1628                           /system/fonts/CutiveMono.ttf
+7f840c1000-7f840c2000 r--p 000d0000 b3:18 444                            /system/lib64/libGLES_trace.so
+7f85c49000-7f85c4a000 r--p 00007000 b3:18 2072                           /system/lib64/libnativehelper.so
+7f75dd9000-7f75ddb000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f7b89e000-7f7b8ad000 r-xp 00000000 b3:18 3694                           /system/vendor/lib64/libdsutils.so
+7f85f43000-7f85f44000 rw-p 00046000 b3:18 2141                           /system/lib64/libwilhelm.so
+7f771cb000-7f77993000 r--p 00000000 b3:18 4203                           /system/fonts/NotoSansSC-Regular.otf
+7f84b2e000-7f84b3d000 ---p 00000000 00:00 0 
+7f7887c000-7f788be000 r--p 00000000 b3:18 1662                           /system/fonts/NotoSansSymbols-Regular-Subsetted.ttf
+7f85a74000-7f85a75000 rw-p 00009000 b3:18 2229                           /system/lib64/libcamera_metadata.so
+7f7f4d4000-7f7f4f4000 rw-p 00000000 00:04 9469                           /dev/ashmem/dalvik-large live objects (deleted)
+7f7b75d000-7f7b75e000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f8534f000-7f85351000 r-xp 00000000 b3:18 2008                           /system/lib64/libhardware.so
+7f85b70000-7f85b77000 r--p 0002b000 b3:18 2119                           /system/lib64/libinput.so
+7f8619f000-7f861a0000 rw-p 00000000 00:00 0                              [anon:linker_alloc]
+7f78ec9000-7f78ed7000 r--p 00000000 b3:18 200                            /system/fonts/NotoSansMalayalamUI-Bold.ttf
+7f78f2d000-7f78f35000 r--p 00000000 b3:18 199                            /system/fonts/NotoSansGurmukhiUI-Regular.ttf
+7f81634000-7f81734000 rw-p 00000000 00:04 9460                           /dev/ashmem/dalvik-allocspace zygote / non moving space live-bitmap 0 (deleted)
+7f841e5000-7f841e6000 rw-p 00001000 b3:18 2153                           /system/lib64/libsync.so
+7f81760000-7f81761000 r-xp 00000000 b3:18 2162                           /system/lib64/libsigchain.so
+7f6d956000-7f6d963000 r-xp 00000000 b3:18 2065                           /system/lib64/libkeystore_binder.so
+7f83fc3000-7f83fc4000 r--p 00004000 b3:18 2185                           /system/lib64/libwpa_client.so
+7f81d85000-7f81d88000 r--p 00000000 00:00 0 
+7f7b9de000-7f7b9df000 rw-p 00002000 b3:18 2306                           /system/lib64/hw/memtrack.msm8916.so
+7f6d9f7000-7f6d9f8000 rw-p 00010000 b3:18 2282                           /system/lib64/libstagefright_amrnb_common.so
+7f85163000-7f85173000 ---p 00000000 00:00 0 
+7f85df3000-7f85e01000 rw-p 00000000 00:00 0 
+7f85bf0000-7f85c06000 r--p 0006c000 b3:18 2102                           /system/lib64/libgui.so
+7f7b9b3000-7f7b9bb000 r-xp 00000000 b3:18 2071                           /system/lib64/libpowergenie_native3.so
+7f6d943000-7f6d953000 ---p 00000000 00:00 0 
+7f846d5000-7f846d8000 r--p 00012000 b3:18 2019                           /system/lib64/libimg_utils.so
+7f78c2c000-7f78c34000 r--p 00000000 b3:18 161                            /system/fonts/NotoSansBalinese-Regular.ttf
+7f83d70000-7f83d71000 rw-p 0001d000 b3:18 2046                           /system/lib64/libvorbisidec.so
+7f7b9df000-7f7b9f6000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f7a6fa000-7f7a6fb000 r-xp 00000000 b3:18 2202                           /system/lib64/libqdMetaData.so
+7f84b3f000-7f84b40000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f83f4b000-7f83f4c000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f78f25000-7f78f2d000 r--p 00000000 b3:18 190                            /system/fonts/NotoSansGurmukhiUI-Bold.ttf
+7f78c48000-7f78c62000 r--p 00000000 b3:18 1683                           /system/fonts/NotoSansMyanmarUI-Bold.ttf
+7f78bbb000-7f78bbd000 r--p 00000000 b3:18 4194                           /system/fonts/NotoSansLisu-Regular.ttf
+7f81db1000-7f81db2000 r--p 00000000 00:00 0 
+7f85ed8000-7f85ee7000 ---p 00000000 00:00 0 
+7f81d80000-7f81d81000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f84603000-7f84612000 ---p 00000000 00:00 0 
+7f7b8ad000-7f7b8bc000 ---p 00000000 00:00 0 
+7f78bb7000-7f78bbb000 r--p 00000000 b3:18 4195                           /system/fonts/NotoSansMandaic-Regular.ttf
+767fb000-76972000 rw-p 00000000 00:04 9457                               /dev/ashmem/dalvik-zygote space (deleted)
+7f8619a000-7f8619d000 r--p 00017000 b3:18 2192                           /system/lib64/libcutils.so
+7f845c0000-7f845ca000 r-xp 00000000 b3:18 4375                           /system/lib64/libperfhub_client.so
+7f7b6b0000-7f7b6bf000 ---p 00000000 00:00 0 
+7f82e77000-7f82e78000 rw-p 00014000 b3:18 2248                           /system/lib64/libcommon_time_client.so
+7f6d735000-7f6d736000 r--p 00000000 b3:18 2132                           /system/lib64/libhwdeviceinfo.so
+7f83e75000-7f83e76000 rw-p 00026000 b3:18 463                            /system/lib64/libdrmframework.so
+7f78ce1000-7f78cea000 r--p 00000000 b3:18 260                            /system/fonts/NotoSansKhmerUI-Bold.ttf
+7f77d55000-7f7860d000 r--p 00000000 b3:18 1633                           /system/fonts/DroidSansChinese.ttf
+7f85377000-7f8538d000 r-xp 00000000 b3:18 2115                           /system/lib64/libGLESv2.so
+7f6d74d000-7f6d75c000 ---p 00000000 00:00 0 
+7f7980f000-7f79810000 rw-p 0000a000 b3:18 2279                           /system/lib64/libqdutils.so
+7f852f5000-7f85305000 ---p 00000000 00:00 0 
+7f84be2000-7f84be3000 rw-p 00004000 b3:18 2237                           /system/lib64/libusbhost.so
+7f7970c000-7f7971b000 ---p 00000000 00:00 0 
+7f7b911000-7f7b912000 rw-p 00001000 b3:18 3901                           /system/vendor/lib64/libsmemlog.so
+7f6d975000-7f6d976000 rw-p 00011000 b3:18 2065                           /system/lib64/libkeystore_binder.so
+7f86202000-7f86203000 r--p 00000000 00:00 0 
+7f82eab000-7f82eac000 r--p 00023000 b3:18 4377                           /system/lib64/libprotobuf-cpp-lite.so
+7f797e2000-7f797f1000 ---p 00000000 00:00 0 
+7f78c40000-7f78c44000 r--p 00000000 b3:18 256                            /system/fonts/NotoSansThaana-Bold.ttf
+7f7983d000-7f7983e000 r--p 00006000 b3:18 2294                           /system/lib64/hw/gralloc.msm8916.so
+7f76083000-7f760d2000 r--p 00000000 b3:18 1646                           /system/fonts/RobotoCondensed-LightItalic.ttf
+7f8539f000-7f853ab000 r-xp 00000000 b3:18 2257                           /system/lib64/libGLESv1_CM.so
+7f75d62000-7f75d73000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f6d9ae000-7f6d9bd000 ---p 00000000 00:00 0 
+7f6d8f7000-7f6d906000 ---p 00000000 00:00 0 
+7f85df0000-7f85df3000 rw-p 00099000 b3:18 2006                           /system/lib64/libc.so
+7f844e7000-7f844e8000 rw-p 001e0000 b3:18 547                            /system/lib64/libstagefright.so
+7f7e67b000-7f7e6bb000 rw-p 00000000 00:04 9473                           /dev/ashmem/dalvik-mark stack (deleted)
+7f78cf4000-7f78cfd000 r--p 00000000 b3:18 258                            /system/fonts/NotoSansKhmer-Bold.ttf
+7f6d788000-7f6d797000 ---p 00000000 00:00 0 
+7f6da41000-7f6da42000 rw-p 00043000 b3:18 2187                           /system/lib64/libexif.so
+7f844e8000-7f844eb000 rw-p 00000000 00:00 0 
+7f860a4000-7f860b3000 ---p 00000000 00:00 0 
+7f84664000-7f8466e000 r-xp 00000000 b3:18 2164                           /system/lib64/libsoundtrigger.so
+7f7b704000-7f7b705000 rw-p 00000000 00:00 0 
+7f6d739000-7f6d748000 ---p 00000000 00:00 0 
+7f78d53000-7f78d67000 r--p 00000000 b3:18 4201                           /system/fonts/NotoSansOriyaUI-Bold.ttf
+7f7b97a000-7f7b97b000 r--p 00004000 b3:18 2252                           /system/lib64/libhw_hal.so
+7f78c3a000-7f78c40000 r--p 00000000 b3:18 221                            /system/fonts/NotoSansCham-Regular.ttf
+7f84b6b000-7f84b6c000 r--p 0001b000 b3:18 2133                           /system/lib64/libz.so
+7f844d2000-7f844e7000 r--p 001cb000 b3:18 547                            /system/lib64/libstagefright.so
+7f8418d000-7f841c2000 r-xp 00000000 b3:18 2136                           /system/lib64/libpng.so
+7f78ba1000-7f78ba6000 r--p 00000000 b3:18 236                            /system/fonts/NotoSansSaurashtra-Regular.ttf
+7f81761000-7f81770000 ---p 00000000 00:00 0 
+7f792a6000-7f792f5000 r--p 00000000 b3:18 1751                           /system/fonts/Roboto-Italic.ttf
+7f79810000-7f79815000 r-xp 00000000 b3:18 2111                           /system/lib64/libmemalloc.so
+7f853be000-7f85484000 r-xp 00000000 b3:18 2246                           /system/lib64/libEGL.so
+7f846d9000-7f84afd000 r-xp 00000000 b3:18 455                            /system/lib64/libpdfium.so
+7f7b8df000-7f7b8eb000 rw-p 00000000 00:00 0 
+7f78de1000-7f78df5000 r--p 00000000 b3:18 1717                           /system/fonts/NotoSansKannada-Regular.ttf
+7f7b9ca000-7f7b9cb000 r--p 00007000 b3:18 2071                           /system/lib64/libpowergenie_native3.so
+7f8468c000-7f8469b000 ---p 00000000 00:00 0 
+7f85ccd000-7f85cce000 r-xp 00000000 b3:18 2148                           /system/lib64/libmemtrack.so
+7f861ff000-7f86200000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f82ead000-7f82eb7000 r-xp 00000000 b3:18 2035                           /system/lib64/libstagefright_avc_common.so
+7f7a586000-7f7a5c2000 r--s 01063000 b3:18 1173                           /system/framework/framework-res-hwext.apk
+7f7b75e000-7f7b766000 r-xp 00000000 b3:18 1095                           /system/vendor/lib64/egl/libEGL_adreno.so
+7f6d9d6000-7f6d9d7000 rw-p 00004000 b3:18 2000                           /system/lib64/libmedia_jni.huawei.so
+7f755ac000-7f755bb000 ---p 00000000 00:00 0 
+7f85ceb000-7f85cfa000 ---p 00000000 00:00 0 
+7f6d75e000-7f6d762000 r-xp 00000000 b3:18 3764                           /system/vendor/lib64/libidl.so
+7f84c2c000-7f84cf7000 r-xp 00000000 b3:18 2024                           /system/lib64/libmedia.so
+7f83f8a000-7f83f8b000 rw-p 00003000 b3:18 448                            /system/lib64/liboeminfo.so
+7f78e98000-7f78eb0000 r--p 00000000 b3:18 185                            /system/fonts/NotoSansBengali-Bold.ttf
+7f7a72a000-7f7b2aa000 r-xp 00000000 b3:18 4537                           /system/vendor/lib64/libllvm-glnext.so
+7f84bce000-7f84bd2000 r-xp 00000000 b3:18 2237                           /system/lib64/libusbhost.so
+7f793dc000-7f7942c000 r--p 00000000 b3:18 1713                           /system/fonts/Roboto-ThinItalic.ttf
+7f75f53000-7f75fa1000 r--p 00000000 b3:18 1758                           /system/fonts/RobotoCondensed-BoldItalic.ttf
+7f82d78000-7f82d86000 rw-p 00000000 00:00 0 
+7f83dcb000-7f83dd0000 r--p 0003b000 b3:18 2069                           /system/lib64/libstagefright_omx.so
+7f84111000-7f84178000 r-xp 00000000 b3:18 2222                           /system/lib64/libft2.so
+7f78c96000-7f78cb1000 r--p 00000000 b3:18 168                            /system/fonts/NotoSansMyanmar-Regular.ttf
+7f841e6000-7f841e9000 r-xp 00000000 b3:18 2066                           /system/lib64/libstdc++.so
+7f7b97c000-7f7b97d000 rw-p 00000000 00:00 0                              [anon:linker_alloc_vector]
+7f7b2aa000-7f7b2b9000 ---p 00000000 00:00 0 
+7f7b779000-7f7b77b000 rw-p 00000000 00:00 0 
+7f84d07000-7f84d3e000 r--p 000d7000 b3:18 2024                           /system/lib64/libmedia.so
+7f7b97f000-7f7b98f000 ---p 00000000 00:00 0 
+7f7860d000-7f7887c000 r--p 00000000 b3:18 1748                           /system/fonts/NotoColorEmoji.ttf
+7f7b97e000-7f7b97f000 r-xp 00000000 b3:18 2272                           /system/lib64/libhwtheme_jni.so
+7f82cc9000-7f82cd9000 ---p 00000000 00:00 0 
+7f7b901000-7f7b910000 ---p 00000000 00:00 0 
+7f7b93e000-7f7b93f000 rw-p 0000a000 b3:18 3567                           /system/vendor/lib64/libqmi_cci.so
+7f6d9f6000-7f6d9f7000 r--p 0000f000 b3:18 2282                           /system/lib64/libstagefright_amrnb_common.so
+7f75dab000-7f75dc8000 r--p 00000000 b3:18 1630                           /system/fonts/DancingScript-Regular.ttf
+7f85ce0000-7f85ceb000 r-xp 00000000 b3:18 2081                           /system/lib64/libbacktrace.so
+7f75e0c000-7f75e1d000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f85176000-7f85177000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f7b9cc000-7f7b9cd000 r-xp 00000000 b3:18 2306                           /system/lib64/hw/memtrack.msm8916.so
+7f84be1000-7f84be2000 r--p 00003000 b3:18 2237                           /system/lib64/libusbhost.so
+7f79123000-7f79173000 r--p 00000000 b3:18 1725                           /system/fonts/Roboto-BoldItalic.ttf
+7f7b950000-7f7b951000 r--p 00001000 b3:18 2219                           /system/lib64/libqmi_nv_api.so
+7f79826000-7f79827000 rw-p 00006000 b3:18 2111                           /system/lib64/libmemalloc.so
+7f8463b000-7f84652000 r-xp 00000000 b3:18 2089                           /system/lib64/libminikin.so
+7f85b37000-7f85b3b000 r--p 0005c000 b3:18 2021                           /system/lib64/libinputflinger.so
+7f84304000-7f844c3000 r-xp 00000000 b3:18 547                            /system/lib64/libstagefright.so
+7f853ab000-7f853bb000 ---p 00000000 00:00 0 
+7f788dc000-7f788ec000 r--p 00000000 b3:18 4207                           /system/fonts/NotoSansVai-Regular.ttf
+7f85cfc000-7f85cfd000 rw-p 0000c000 b3:18 2081                           /system/lib64/libbacktrace.so
+7f82edd000-7f82eed000 ---p 00000000 00:00 0 
+7f85568000-7f8556a000 rw-p 000c2000 b3:18 2037                           /system/lib64/libsqlite.so
+7f7b6f1000-7f7b701000 ---p 00000000 00:00 0 
+7f7f4b4000-7f7f4d4000 rw-p 00000000 00:04 9470                           /dev/ashmem/dalvik-large marked objects (deleted)
+7f84afd000-7f84b0c000 ---p 00000000 00:00 0 
+7f797c6000-7f797d6000 ---p 00000000 00:00 0 
+7f81db3000-7f82cc9000 r-xp 00000000 b3:18 2199                           /system/lib64/libLLVM.so
+7f7a6f7000-7f7a6f9000 r--p 00000000 b3:18 249                            /system/fonts/NotoSansBuginese-Regular.ttf
+7f844ed000-7f844fc000 ---p 00000000 00:00 0 
+7f846d8000-7f846d9000 rw-p 00015000 b3:18 2019                           /system/lib64/libimg_utils.so
+7f81d57000-7f81d67000 ---p 00000000 00:00 0 
+7f7920c000-7f79257000 r--p 00000000 b3:18 1733                           /system/fonts/Roboto-Black.ttf
+7f78f61000-7f78f7e000 r--p 00000000 b3:18 231                            /system/fonts/NotoSansGujaratiUI-Regular.ttf
+7f79047000-7f7904b000 r--p 00000000 b3:18 1752                           /system/fonts/NotoSansArmenian-Regular.ttf
+7f8133e000-7f81439000 rw-p 00000000 00:04 13871                          /dev/ashmem/dalvik-allocspace non moving space mark-bitmap 4 (deleted)
+7f85305000-7f85306000 r--p 00058000 b3:18 2158                           /system/lib64/libsonivox.so
+7f85a64000-7f85a73000 ---p 00000000 00:00 0 
+7f797f5000-7f797ff000 r-xp 00000000 b3:18 2279                           /system/lib64/libqdutils.so
+7f78da5000-7f78db9000 r--p 00000000 b3:18 174                            /system/fonts/NotoSansKannadaUI-Bold.ttf
+7f7b6d7000-7f7b6d8000 rw-p 00006000 b3:18 3867                           /system/vendor/lib64/libadreno_utils.so
+7f845ca000-7f845d9000 ---p 00000000 00:00 0 
+7f78ba8000-7f78baa000 r--p 00000000 b3:18 261                            /system/fonts/NotoSansOlChiki-Regular.ttf
+7f85cce000-7f85cde000 ---p 00000000 00:00 0 
+7f7a5c2000-7f7a603000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f85375000-7f85376000 r--p 00003000 b3:18 2163                           /system/lib64/libETC1.so
+7f6d9e7000-7f6d9f6000 ---p 00000000 00:00 0 
+5563422000-5563426000 r-xp 00000000 b3:18 731                            /system/bin/app_process64
+7f83d6f000-7f83d70000 r--p 0001c000 b3:18 2046                           /system/lib64/libvorbisidec.so
+7f78bea000-7f78bf0000 r--p 00000000 b3:18 235                            /system/fonts/NotoSansCoptic-Regular.ttf
+7f7fcf4000-7f804f4000 rw-p 00000000 00:04 9466                           /dev/ashmem/dalvik-allocspace main rosalloc space 1 live-bitmap 2 (deleted)
+7f85eee000-7f85eef000 rw-p 000e6000 b3:18 461                            /system/lib64/libc++.so
+7f7b705000-7f7b74b000 r-xp 00000000 b3:18 3998                           /system/vendor/lib64/libgsl.so
+7f84600000-7f84601000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f797b2000-7f797c6000 r-xp 00000000 b3:18 2042                           /system/lib64/libandroid.so
+7f6da5f000-7f6da60000 r--p 0000d000 b3:18 2256                           /system/lib64/libjhead.so
+7f7b912000-7f7b913000 r-xp 00000000 b3:18 4005                           /system/vendor/lib64/libqmi_common_so.so
+7f7b92e000-7f7b93d000 ---p 00000000 00:00 0 
+7f79749000-7f797b2000 rw-p 00000000 00:00 0 
+7f7b993000-7f7b9b3000 rw-p 00000000 00:04 12613                          /dev/ashmem/dalvik-LinearAlloc (deleted)
+7f844fc000-7f844fd000 r--p 00001000 b3:18 4336                           /system/lib64/lib_oeminfo_interface.so
+7f84b3d000-7f84b3e000 r--p 0000a000 b3:18 2263                           /system/lib64/libaudioutils.so
+7f8512a000-7f85163000 r-xp 00000000 b3:18 462                            /system/lib64/libssl.so
+7f844eb000-7f844ed000 r-xp 00000000 b3:18 4336                           /system/lib64/lib_oeminfo_interface.so
+7f7971d000-7f79738000 r-xp 00000000 b3:18 2174                           /system/lib64/libcompiler_rt.so
+7f8462a000-7f84639000 ---p 00000000 00:00 0 
+7f84bcc000-7f84bcd000 r--p 0004f000 b3:18 2032                           /system/lib64/libharfbuzz_ng.so
+7f6db02000-7f6db03000 rw-p 00000000 00:00 0 
+7f842d0000-7f842d1000 r--p 00001000 b3:18 2079                           /system/lib64/libstagefright_http_support.so
+7f85497000-7f854a3000 rw-p 000d2000 b3:18 2246                           /system/lib64/libEGL.so
+7f78b80000-7f78b8c000 r--p 00000000 b3:18 194                            /system/fonts/NotoSansTaiTham-Regular.ttf
+7f83fc5000-7f83fc6000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f7b941000-7f7b950000 ---p 00000000 00:00 0 
+7f842be000-7f842bf000 rw-p 00004000 b3:18 2033                           /system/lib64/libeffects.so
+7f7b8ef000-7f7b8fe000 ---p 00000000 00:00 0 
+7f85376000-7f85377000 rw-p 00004000 b3:18 2163                           /system/lib64/libETC1.so
+7f79815000-7f79825000 ---p 00000000 00:00 0 
+7f84188000-7f8418b000 r--p 00069000 b3:18 2222                           /system/lib64/libft2.so
+7f78d67000-7f78d7b000 r--p 00000000 b3:18 4202                           /system/fonts/NotoSansOriyaUI-Regular.ttf
+7f797d6000-7f797da000 r--p 00016000 b3:18 2042                           /system/lib64/libandroid.so
+7f6d973000-7f6d975000 r--p 0000f000 b3:18 2065                           /system/lib64/libkeystore_binder.so
+7f82e9b000-7f82eab000 ---p 00000000 00:00 0 
+7f6d7a3000-7f6d7c1000 r-xp 00000000 b3:18 3483                           /system/vendor/lib64/libdiag.so
+7f861fb000-7f861fd000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f7d4e3000-7f7d4e4000 rw-p 00000000 00:00 0 
+7f6d74a000-7f6d74d000 r-xp 00000000 b3:18 3746                           /system/vendor/lib64/libmdmdetect.so
+7f82d86000-7f82dd0000 r-xp 00000000 b3:18 2023                           /system/lib64/libbcinfo.so
+7f85c30000-7f85c31000 r--p 00007000 b3:18 2027                           /system/lib64/libnetutils.so
+7f85288000-7f8529c000 r--p 00101000 b3:18 465                            /system/lib64/libcrypto.so
+7f8418c000-7f8418d000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f790cc000-7f790e9000 r--p 00000000 b3:18 4192                           /system/fonts/NotoNaskhArabicUI-Regular.ttf
+7f77993000-7f77d55000 r--p 00000000 b3:18 201                            /system/fonts/DroidSansFallback.ttf
+7f83fb3000-7f83fc3000 ---p 00000000 00:00 0 
+7f7b9cd000-7f7b9dd000 ---p 00000000 00:00 0 
+7f78e2d000-7f78e48000 r--p 00000000 b3:18 170                            /system/fonts/NotoSansTelugu-Bold.ttf
+7f7b96a000-7f7b97a000 ---p 00000000 00:00 0 
+7f78bd9000-7f78bdb000 r--p 00000000 b3:18 173                            /system/fonts/NotoSansKayahLi-Regular.ttf
+7f842d2000-7f842f0000 r-xp 00000000 b3:18 2101                           /system/lib64/libstagefright_foundation.so
+7f842bf000-7f842c1000 r-xp 00000000 b3:18 2079                           /system/lib64/libstagefright_http_support.so
+7f7d4e7000-7f7d5af000 rw-p 00000000 00:04 14438                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7a716000-7f7a725000 ---p 00000000 00:00 0 
+7f8531d000-7f8532d000 ---p 00000000 00:00 0 
+7f7b6d6000-7f7b6d7000 r--p 00005000 b3:18 3867                           /system/vendor/lib64/libadreno_utils.so
+7f7903e000-7f79043000 r--p 00000000 b3:18 205                            /system/fonts/NotoSansGeorgian-Regular.ttf
+7f8538d000-7f8539c000 ---p 00000000 00:00 0 
+7f790e9000-7f79106000 r--p 00000000 b3:18 4189                           /system/fonts/NotoNaskhArabic-Bold.ttf
+7f85a73000-7f85a74000 r--p 00008000 b3:18 2229                           /system/lib64/libcamera_metadata.so
+7f82e72000-7f82e77000 r--p 0000f000 b3:18 2248                           /system/lib64/libcommon_time_client.so
+7f83eaf000-7f83eb0000 r--p 00029000 b3:18 2123                           /system/lib64/libRScpp.so
+7f7b75a000-7f7b75b000 r--p 00045000 b3:18 3998                           /system/vendor/lib64/libgsl.so
+7f78ff6000-7f79017000 r--p 00000000 b3:18 1755                           /system/fonts/NotoSansDevanagari-Bold.ttf
+7f78c0b000-7f78c2c000 r--p 00000000 b3:18 4193                           /system/fonts/NotoSansBamum-Regular.ttf
+7f85308000-7f8531d000 r-xp 00000000 b3:18 2276                           /system/lib64/libselinux.so
+7f6d909000-7f6d90a000 rw-p 00027000 b3:18 4368                           /system/lib64/libkeymaster1.so
+7f84682000-7f8468c000 r-xp 00000000 b3:18 4381                           /system/lib64/libradio.so
+7f842c1000-7f842d0000 ---p 00000000 00:00 0 
+7f83d60000-7f83d6f000 ---p 00000000 00:00 0 
+7f84510000-7f84511000 r--p 00002000 b3:18 2190                           /system/lib64/libservices.huawei.so
+7f7d45b000-7f7d47b000 rw-p 00000000 00:04 14473                          /dev/ashmem/dalvik-LinearAlloc (deleted)
+7f84b23000-7f84b2e000 r-xp 00000000 b3:18 2263                           /system/lib64/libaudioutils.so
+7f83d84000-7f83d85000 r--p 00002000 b3:18 2319                           /system/lib64/libstagefright_yuv.so
+7f7a603000-7f7a6aa000 r--s 01829000 b3:18 88                             /system/framework/framework-res.apk
+7f84b22000-7f84b23000 rw-p 00000000 00:00 0 
+7f861fe000-7f861ff000 rw-p 00000000 00:00 0                              [anon:linker_alloc]
+7f83f2c000-7f83f2d000 rw-p 00003000 b3:18 2039                           /system/lib64/libspeexresampler.so
+7f85d46000-7f85d47000 rw-p 00039000 b3:18 2196                           /system/lib64/libm.so
+7f84b6d000-7f84bbc000 r-xp 00000000 b3:18 2032                           /system/lib64/libharfbuzz_ng.so
+7f7983f000-7f7a569000 r--s 009d0000 b3:18 88                             /system/framework/framework-res.apk
+7f81770000-7f81771000 r--p 00000000 b3:18 2162                           /system/lib64/libsigchain.so
+7f82de1000-7f82de2000 rw-p 0004b000 b3:18 2023                           /system/lib64/libbcinfo.so
+7f78f01000-7f78f0a000 r--p 00000000 b3:18 1745                           /system/fonts/NotoSansTamilUI-Bold.ttf
+7f840fe000-7f8410e000 ---p 00000000 00:00 0 
+7f6d7d2000-7f6d7d3000 rw-p 0001f000 b3:18 3483                           /system/vendor/lib64/libdiag.so
+7f84626000-7f84627000 r--p 00002000 b3:18 2171                           /system/lib64/libnativebridge.so
+7f86201000-7f86202000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f81d67000-7f81d7b000 r--p 005ef000 b3:18 2235                           /system/lib64/libart.so
+7f84639000-7f8463a000 r--p 00001000 b3:18 2225                           /system/lib64/libprocessgroup.so
+7f842a9000-7f842aa000 rw-p 00009000 b3:18 4345                           /system/lib64/libbase.so
+7f78cb1000-7f78cb9000 r--p 00000000 b3:18 239                            /system/fonts/SmartZawgyi.ttf
+7f7a70d000-7f7a716000 r-xp 00000000 b3:18 1100                           /system/vendor/lib64/egl/libGLESv1_CM_adreno.so
+7f78ef3000-7f78f01000 r--p 00000000 b3:18 224                            /system/fonts/NotoSansMalayalam-Regular.ttf
+7f84d3f000-7f84f5b000 r-xp 00000000 b3:18 2267                           /system/lib64/libicui18n.so
+7f86115000-7f86120000 r--p 00043000 b3:18 2175                           /system/lib64/libbinder.so
+7f84c2a000-7f84c2b000 rw-p 00037000 b3:18 2146                           /system/lib64/libjpeg.so
+7f82e43000-7f82e52000 ---p 00000000 00:00 0 
+7f7b639000-7f7b648000 ---p 00000000 00:00 0 
+7f844fe000-7f84500000 r-xp 00000000 b3:18 2190                           /system/lib64/libservices.huawei.so
+7f797f4000-7f797f5000 rw-p 0000b000 b3:18 2193                           /system/lib64/libqservice.so
+7f85c7f000-7f85cba000 r-xp 00000000 b3:18 2030                           /system/lib64/libandroidfw.so
+7f7a70b000-7f7a70c000 rw-p 00001000 b3:18 2202                           /system/lib64/libqdMetaData.so
+7f83faa000-7f83fab000 rw-p 0000f000 b3:18 2260                           /system/lib64/libhuawei_secure.so
+7f83ff3000-7f83ff4000 rw-p 0001d000 b3:18 2088                           /system/lib64/libhwgl.so
+7f8532d000-7f8532e000 r--p 00015000 b3:18 2276                           /system/lib64/libselinux.so
+7f78cfd000-7f78d06000 r--p 00000000 b3:18 253                            /system/fonts/NotoSansKhmer-Regular.ttf
+7f846a3000-7f846b2000 ---p 00000000 00:00 0 
+7f83ff2000-7f83ff3000 r--p 0001c000 b3:18 2088                           /system/lib64/libhwgl.so
+7f7b990000-7f7b991000 rw-p 00002000 b3:18 2272                           /system/lib64/libhwtheme_jni.so
+7f7b965000-7f7b966000 rw-p 00003000 b3:18 2218                           /system/lib64/libqmi_oem_api.so
+7f78bf0000-7f78bf9000 r--p 00000000 b3:18 191                            /system/fonts/NotoSansCherokee-Regular.ttf
+7f85c19000-7f85c20000 r-xp 00000000 b3:18 2027                           /system/lib64/libnetutils.so
+7f7b6c1000-7f7b6c6000 r-xp 00000000 b3:18 3867                           /system/vendor/lib64/libadreno_utils.so
+7f85307000-7f85308000 rw-p 00000000 00:00 0 
+7f6d773000-7f6d788000 r-xp 00000000 b3:18 3619                           /system/vendor/lib64/libqmiservices.so
+7f6da93000-7f6dafb000 r-xp 00000000 b3:18 2165                           /system/lib64/libmedia_jni.so
+7f85a1f000-7f85a50000 r--p 004a5000 b3:18 2217                           /system/lib64/libskia.so
+7f7b951000-7f7b952000 rw-p 00002000 b3:18 2219                           /system/lib64/libqmi_nv_api.so
+7f844fd000-7f844fe000 rw-p 00002000 b3:18 4336                           /system/lib64/lib_oeminfo_interface.so
+7f84be3000-7f84c19000 r-xp 00000000 b3:18 2146                           /system/lib64/libjpeg.so
+7f7b966000-7f7b96a000 r-xp 00000000 b3:18 2252                           /system/lib64/libhw_hal.so
+7f841f8000-7f841f9000 r--p 00002000 b3:18 2066                           /system/lib64/libstdc++.so
+7f7de7a000-7f7e67b000 rw-p 00000000 00:04 9474                           /dev/ashmem/dalvik-allocation stack (deleted)
+7f83e9f000-7f83eaf000 ---p 00000000 00:00 0 
+7f85c06000-7f85c07000 rw-p 00082000 b3:18 2102                           /system/lib64/libgui.so
+7f85360000-7f85361000 r--p 00001000 b3:18 2008                           /system/lib64/libhardware.so
+7f78cd1000-7f78cd9000 r--p 00000000 b3:18 204                            /system/fonts/NotoSansLao-Bold.ttf
+7f7612c000-7f769e4000 r--p 00000000 b3:18 1633                           /system/fonts/DroidSansChinese.ttf
+7f78baa000-7f78baf000 r--p 00000000 b3:18 4197                           /system/fonts/NotoSansNKo-Regular.ttf
+7f8612b000-7f8613b000 ---p 00000000 00:00 0 
+7f860be000-7f860cd000 rw-p 00178000 b3:18 458                            /system/lib64/libandroid_runtime.so
+7f845d9000-7f845dc000 r--p 0000b000 b3:18 4375                           /system/lib64/libperfhub_client.so
+7f85175000-7f85176000 rw-p 0003b000 b3:18 462                            /system/lib64/libssl.so
+7f7b8be000-7f7b8bf000 rw-p 00011000 b3:18 3694                           /system/vendor/lib64/libdsutils.so
+7f82eef000-7f8377d000 r-xp 00000000 b3:18 4334                           /system/lib64/lib_k3_ffmpeg.so
+7f75f05000-7f75f42000 r--p 00000000 b3:18 1739                           /system/fonts/NotoSerif-Regular.ttf
+7f6d90a000-7f6d915000 r-xp 00000000 b3:18 4369                           /system/lib64/libkeymaster_messages.so
+7f6d772000-7f6d773000 rw-p 00004000 b3:18 3764                           /system/vendor/lib64/libidl.so
+7f85351000-7f85360000 ---p 00000000 00:00 0 
+7f7904b000-7f79050000 r--p 00000000 b3:18 1714                           /system/fonts/NotoSansThaiUI-Bold.ttf
+7f81734000-7f81760000 r--p 00ea6000 b3:1a 97924                          /data/dalvik-cache/arm64/system@framework@boot.art
+7f83faf000-7f83fb3000 r-xp 00000000 b3:18 2185                           /system/lib64/libwpa_client.so
+7f85ccc000-7f85ccd000 rw-p 0003e000 b3:18 2030                           /system/lib64/libandroidfw.so
+7f78c44000-7f78c48000 r--p 00000000 b3:18 178                            /system/fonts/NotoSansThaana-Regular.ttf
+7f860cf000-7f86106000 r-xp 00000000 b3:18 2175                           /system/lib64/libbinder.so
+7f78b9a000-7f78b9e000 r--p 00000000 b3:18 181                            /system/fonts/NotoSansSylotiNagri-Regular.ttf
+7f846c6000-7f846d5000 ---p 00000000 00:00 0 
+7f75d7d000-7f75d8e000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f8534c000-7f8534d000 r--p 0000c000 b3:18 2204                           /system/lib64/libhardware_legacy.so
+7f755bb000-7f755bc000 r--p 00001000 b3:18 2145                           /system/lib64/libwebviewchromium_loader.so
+7f846a1000-7f846a3000 r-xp 00000000 b3:18 2239                           /system/lib64/libnetd_client.so
+7f6d927000-7f6d943000 r-xp 00000000 b3:18 4384                           /system/lib64/libsoftkeymasterdevice.so
+7fdb5e7000-7fdbde6000 rw-p 00000000 00:00 0                              [stack]
+7f84614000-7f84617000 r-xp 00000000 b3:18 2171                           /system/lib64/libnativebridge.so
+7f6d955000-7f6d956000 rw-p 00020000 b3:18 4384                           /system/lib64/libsoftkeymasterdevice.so
+7f82eed000-7f82eee000 r--p 00003000 b3:18 2243                           /system/lib64/libpowermanager.so
+7f85c4b000-7f85c6c000 r-xp 00000000 b3:18 2261                           /system/lib64/libexpat.so
+7f796c1000-7f7970b000 r--p 00000000 b3:18 1709                           /system/fonts/Roboto-Medium.ttf
+7f84512000-7f845aa000 r-xp 00000000 b3:18 2015                           /system/lib64/libhwui.so
+7f7a6cc000-7f7a6f6000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f6d748000-7f6d749000 r--p 00001000 b3:18 2270                           /system/lib64/libfm_jni.so
+7f85a52000-7f85a5c000 rw-p 00000000 00:00 0 
+7f79173000-7f791bd000 r--p 00000000 b3:18 1750                           /system/fonts/Roboto-Bold.ttf
+7fdb5e7000-7fdb5e7000 ---p 00000000 00:00 0 
+7f6d9d7000-7f6d9e7000 r-xp 00000000 b3:18 2282                           /system/lib64/libstagefright_amrnb_common.so
+7f82ec8000-7f82ec9000 r-xp 00000000 b3:18 2245                           /system/lib64/libstagefright_enc_common.so
+7f84f6b000-7f84f7f000 r--p 00226000 b3:18 2267                           /system/lib64/libicui18n.so
+7f85dec000-7f85df0000 r--p 00095000 b3:18 2006                           /system/lib64/libc.so
+7f845ea000-7f845fa000 ---p 00000000 00:00 0 
+7f78d7b000-7f78d90000 r--p 00000000 b3:18 4199                           /system/fonts/NotoSansOriya-Bold.ttf
+7f7b701000-7f7b703000 r--p 00018000 b3:18 4505                           /system/vendor/lib64/egl/libESXEGL_adreno.so
+7f7b97b000-7f7b97c000 rw-p 00005000 b3:18 2252                           /system/lib64/libhw_hal.so
+7f6d9c2000-7f6d9c5000 r-xp 00000000 b3:18 2000                           /system/lib64/libmedia_jni.huawei.so
+7f75ddb000-7f75dea000 r--p 00000000 b3:18 1627                           /system/fonts/ComingSoon.ttf
+7f85c07000-7f85c17000 r-xp 00000000 b3:18 2010                           /system/lib64/libui.so
+7f83e70000-7f83e75000 r--p 00021000 b3:18 463                            /system/lib64/libdrmframework.so
+7f85f2e000-7f85f3e000 ---p 00000000 00:00 0 
+7f8529c000-7f8529d000 rw-p 00115000 b3:18 465                            /system/lib64/libcrypto.so
+7f841fb000-7f84216000 r-xp 00000000 b3:18 2107                           /system/lib64/libunwind.so
+7f79257000-7f792a6000 r--p 00000000 b3:18 1729                           /system/fonts/Roboto-MediumItalic.ttf
+7f81534000-7f81634000 rw-p 00000000 00:04 9461                           /dev/ashmem/dalvik-allocspace zygote / non moving space mark-bitmap 0 (deleted)
+7f6d988000-7f6d989000 r--p 00002000 b3:18 4370                           /system/lib64/libkeystore-engine.so
+7f78ba6000-7f78ba8000 r--p 00000000 b3:18 245                            /system/fonts/NotoSansRejang-Regular.ttf
+7f797da000-7f797db000 rw-p 0001a000 b3:18 2042                           /system/lib64/libandroid.so
+7f8619e000-7f8619f000 rw-p 00000000 00:00 0                              [anon:linker_alloc_vector]
+7f8133d000-7f8133e000 rw-p 00000000 00:04 13872                          /dev/ashmem/dalvik-mod union bitmap (deleted)
+7f78fb9000-7f78fd7000 r--p 00000000 b3:18 1740                           /system/fonts/NotoSansDevanagariUI-Bold.ttf
+7f769e4000-7f76a00000 r--p 00000000 b3:18 4196                           /system/fonts/NotoSansMongolian-Regular.ttf
+7f82ec6000-7f82ec7000 r--p 00009000 b3:18 2035                           /system/lib64/libstagefright_avc_common.so
+7f85b3b000-7f85b3c000 rw-p 00060000 b3:18 2021                           /system/lib64/libinputflinger.so
+7f8619d000-7f8619e000 rw-p 0001a000 b3:18 2192                           /system/lib64/libcutils.so
+7f83f2b000-7f83f2c000 r--p 00002000 b3:18 2039                           /system/lib64/libspeexresampler.so
+7f840c4000-7f840c5000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f841d2000-7f841d3000 r--p 00035000 b3:18 2136                           /system/lib64/libpng.so
+7f86173000-7f8618b000 r-xp 00000000 b3:18 2192                           /system/lib64/libcutils.so
+7f755aa000-7f755ac000 r-xp 00000000 b3:18 2145                           /system/lib64/libwebviewchromium_loader.so
+7f85d47000-7f85ddc000 r-xp 00000000 b3:18 2006                           /system/lib64/libc.so
+7f8534e000-7f8534f000 rw-p 00000000 00:00 0 
+7f7b6bf000-7f7b6c0000 r--p 00032000 b3:18 4506                           /system/vendor/lib64/egl/libESXGLESv1_CM_adreno.so
+7f75ec8000-7f75f05000 r--p 00000000 b3:18 1664                           /system/fonts/NotoSerif-Bold.ttf
+7f85a10000-7f85a1f000 ---p 00000000 00:00 0 
+7f81d88000-7f81db0000 r--s 00000000 00:0c 1907                           /dev/__properties__
+7f861a0000-7f861a1000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f7d677000-7f7d679000 rw-p 00000000 00:04 9478                           /dev/ashmem/dalvik-mark sweep sweep array free buffer (deleted)
+7f83fe3000-7f83ff2000 ---p 00000000 00:00 0 
+7f83f4a000-7f83f4b000 rw-p 0000d000 b3:18 2028                           /system/lib64/libnbaio.so
+7f79827000-7f7982e000 r-xp 00000000 b3:18 2294                           /system/lib64/hw/gralloc.msm8916.so
+7f78df5000-7f78e11000 r--p 00000000 b3:18 1722                           /system/fonts/NotoSansTeluguUI-Bold.ttf
+7f7f3b4000-7f7f4b4000 rw-p 00000000 00:04 9471                           /dev/ashmem/dalvik-large object free list space allocation info map (deleted)
+7f85ac0000-7f85ace000 r--p 0003b000 b3:18 468                            /system/lib64/libcamera_client.so
+7f82ec9000-7f82ed8000 ---p 00000000 00:00 0 
+7f85362000-7f85365000 r-xp 00000000 b3:18 2163                           /system/lib64/libETC1.so
+7f6d9f8000-7f6da1d000 r-xp 00000000 b3:18 2187                           /system/lib64/libexif.so
+7f6da60000-7f6da61000 rw-p 0000e000 b3:18 2256                           /system/lib64/libjhead.so
+7f7b74b000-7f7b75a000 ---p 00000000 00:00 0 
+7f7e6bb000-7f7f3b4000 rw-p 00000000 00:04 9472                           /dev/ashmem/dalvik-card table (deleted)
+7f797f1000-7f797f4000 r--p 00008000 b3:18 2193                           /system/lib64/libqservice.so
+7f76a03000-7f76a09000 r--p 00000000 b3:18 1639                           /system/fonts/Lohit-Punjabi.ttf
+7f83e76000-7f83e9f000 r-xp 00000000 b3:18 2123                           /system/lib64/libRScpp.so
+7f83f77000-7f83f79000 r-xp 00000000 b3:18 448                            /system/lib64/liboeminfo.so
+7f83dd1000-7f83e1c000 r-xp 00000000 b3:18 2085                           /system/lib64/libopus.so
+7f6da1d000-7f6da2d000 ---p 00000000 00:00 0 
+7f7a6fb000-7f7a70a000 ---p 00000000 00:00 0 
+7f84c19000-7f84c29000 ---p 00000000 00:00 0 
+7f792f5000-7f79340000 r--p 00000000 b3:18 1749                           /system/fonts/Roboto-Regular.ttf
+7f75fea000-7f76039000 r--p 00000000 b3:18 1743                           /system/fonts/RobotoCondensed-Italic.ttf
+7f7a569000-7f7a575000 r-xp 00000000 b3:18 4504                           /system/vendor/lib64/egl/eglSubDriverAndroid.so
+7f83e42000-7f83e43000 r--p 00004000 b3:18 4371                           /system/lib64/libmediautils.so
+7f7a726000-7f7a727000 rw-p 00009000 b3:18 1100                           /system/vendor/lib64/egl/libGLESv1_CM_adreno.so
+7f85493000-7f85497000 r--p 000ce000 b3:18 2246                           /system/lib64/libEGL.so
+7f788be000-7f788dc000 r--p 00000000 b3:18 183                            /system/fonts/NotoSansYi-Regular.ttf
+7f83d85000-7f83d86000 rw-p 00003000 b3:18 2319                           /system/lib64/libstagefright_yuv.so
+7f6d75c000-7f6d75d000 r--p 00002000 b3:18 3746                           /system/vendor/lib64/libmdmdetect.so
+7f84b40000-7f84b5c000 r-xp 00000000 b3:18 2133                           /system/lib64/libz.so
+7f84c2b000-7f84c2c000 rw-p 00000000 00:00 0                              [anon:linker_alloc]
+7f75d8e000-7f75dab000 r--p 00000000 b3:18 1629                           /system/fonts/DancingScript-Bold.ttf
+7f84617000-7f84626000 ---p 00000000 00:00 0 
+7f78b8c000-7f78b8e000 r--p 00000000 b3:18 165                            /system/fonts/NotoSansTagbanwa-Regular.ttf
+7f845bf000-7f845c0000 rw-p 000a4000 b3:18 2015                           /system/lib64/libhwui.so
+7f7d47c000-7f7d4ce000 r-xp 00000000 b3:18 459                            /system/lib64/libjavacore.so
+7f85cfa000-7f85cfc000 r--p 0000a000 b3:18 2081                           /system/lib64/libbacktrace.so
+7f85c7c000-7f85c7e000 r--p 00021000 b3:18 2261                           /system/lib64/libexpat.so
+7f842d1000-7f842d2000 rw-p 00002000 b3:18 2079                           /system/lib64/libstagefright_http_support.so
+7f83f79000-7f83f89000 ---p 00000000 00:00 0 
+7f7983e000-7f7983f000 rw-p 00007000 b3:18 2294                           /system/lib64/hw/gralloc.msm8916.so
+7f7b922000-7f7b923000 r--p 00000000 b3:18 4005                           /system/vendor/lib64/libqmi_common_so.so
+7f85eef000-7f85ef2000 rw-p 00000000 00:00 0 
+7f85279000-7f85288000 ---p 00000000 00:00 0 
+7f6d9c5000-7f6d9d5000 ---p 00000000 00:00 0 
+7f85c4a000-7f85c4b000 rw-p 00008000 b3:18 2072                           /system/lib64/libnativehelper.so
+7f78e7d000-7f78e98000 r--p 00000000 b3:18 225                            /system/fonts/NotoSansBengaliUI-Regular.ttf
+7f845fa000-7f845ff000 r--p 00011000 b3:18 4361                           /system/lib64/libhwextdevice.so
+7f85ee7000-7f85eee000 r--p 000df000 b3:18 461                            /system/lib64/libc++.so
+7f75d73000-7f75d7d000 r--p 00000000 b3:18 1625                           /system/fonts/CarroisGothicSC-Regular.ttf
+7f7b910000-7f7b911000 r--p 00000000 b3:18 3901                           /system/vendor/lib64/libsmemlog.so
+7f7b9bb000-7f7b9ca000 ---p 00000000 00:00 0 
+7f8539c000-7f8539e000 r--p 00015000 b3:18 2115                           /system/lib64/libGLESv2.so
+7f853bd000-7f853be000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f83f14000-7f83f18000 r--p 00055000 b3:18 2195                           /system/lib64/libRS.so
+7f84290000-7f84299000 r-xp 00000000 b3:18 4345                           /system/lib64/libbase.so
+7f83d71000-7f83d72000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f6d75d000-7f6d75e000 rw-p 00003000 b3:18 3746                           /system/vendor/lib64/libmdmdetect.so
+7f84178000-7f84188000 ---p 00000000 00:00 0 
+7f8410e000-7f84110000 r--p 00039000 b3:18 4545                           /system/vendor/lib64/libqc-opt.so
+7f7b75b000-7f7b75c000 rw-p 00046000 b3:18 3998                           /system/vendor/lib64/libgsl.so
+7f82cd9000-7f82d74000 r--p 00f23000 b3:18 2199                           /system/lib64/libLLVM.so
+7f78f3d000-7f78f45000 r--p 00000000 b3:18 195                            /system/fonts/NotoSansGurmukhi-Regular.ttf
+7f7b6d8000-7f7b6da000 rw-p 00000000 00:00 0 
+7f83f38000-7f83f48000 ---p 00000000 00:00 0 
+7f85ddc000-7f85dec000 ---p 00000000 00:00 0 
+7f82de2000-7f82e43000 r-xp 00000000 b3:18 2183                           /system/lib64/libbcc.so
+7f78d90000-7f78da5000 r--p 00000000 b3:18 4200                           /system/fonts/NotoSansOriya-Regular.ttf
+7f85cba000-7f85cca000 ---p 00000000 00:00 0 
+7f85177000-7f85279000 r-xp 00000000 b3:18 465                            /system/lib64/libcrypto.so
+7f85113000-7f85125000 r--p 0018c000 b3:18 2122                           /system/lib64/libicuuc.so
+7f83f76000-7f83f77000 rw-p 0001a000 b3:18 2321                           /system/lib64/libpcre.so
+7f860cd000-7f860cf000 rw-p 00000000 00:00 0 
+7f841e4000-7f841e5000 r--p 00000000 b3:18 2153                           /system/lib64/libsync.so
+7f83f4c000-7f83f66000 r-xp 00000000 b3:18 2321                           /system/lib64/libpcre.so
+7f81d81000-7f81d83000 rw-p 00000000 00:04 9477                           /dev/ashmem/dalvik-mark sweep sweep array free buffer (deleted)
+7f6db00000-7f6db02000 rw-p 00075000 b3:18 2165                           /system/lib64/libmedia_jni.so
+7f84216000-7f84225000 ---p 00000000 00:00 0 
+7f78f7e000-7f78f9b000 r--p 00000000 b3:18 244                            /system/fonts/NotoSansGujarati-Bold.ttf
+7f6d976000-7f6d979000 r-xp 00000000 b3:18 4370                           /system/lib64/libkeystore-engine.so
+7f84bbc000-7f84bcc000 ---p 00000000 00:00 0 
+7f82e63000-7f82e72000 ---p 00000000 00:00 0 
+7f78ed7000-7f78ee5000 r--p 00000000 b3:18 248                            /system/fonts/NotoSansMalayalamUI-Regular.ttf
+7f82e52000-7f82e54000 r--p 00061000 b3:18 2183                           /system/lib64/libbcc.so
+7f6d98a000-7f6d9ae000 r-xp 00000000 b3:18 2159                           /system/lib64/libjavacrypto.so
+7f75dc8000-7f75dd9000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f86120000-7f86121000 rw-p 0004e000 b3:18 2175                           /system/lib64/libbinder.so
+7f83eb2000-7f83f05000 r-xp 00000000 b3:18 2195                           /system/lib64/libRS.so
+7f8539e000-7f8539f000 rw-p 00017000 b3:18 2115                           /system/lib64/libGLESv2.so
+7f7b66d000-7f7b67d000 rw-p 0035f000 b3:18 4507                           /system/vendor/lib64/egl/libESXGLESv2_adreno.so
+7f84613000-7f84614000 rw-p 00002000 b3:18 4382                           /system/lib64/libradio_metadata.so
+7f83e43000-7f83e44000 rw-p 00005000 b3:18 4371                           /system/lib64/libmediautils.so
+7f8532f000-7f85330000 rw-p 00000000 00:00 0 
+7f861a1000-7f861a2000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f78bdb000-7f78be4000 r--p 00000000 b3:18 179                            /system/fonts/NotoSansJavanese-Regular.ttf
+7f85566000-7f85568000 r--p 000c0000 b3:18 2037                           /system/lib64/libsqlite.so
+7f84226000-7f84227000 rw-p 0001b000 b3:18 2107                           /system/lib64/libunwind.so
+7f83dd0000-7f83dd1000 rw-p 00040000 b3:18 2069                           /system/lib64/libstagefright_omx.so
+7f7b778000-7f7b779000 rw-p 0000d000 b3:18 1095                           /system/vendor/lib64/egl/libEGL_adreno.so
+7f8613d000-7f86161000 r-xp 00000000 b3:18 2036                           /system/lib64/libutils.so
+7f7b775000-7f7b778000 r--p 0000a000 b3:18 1095                           /system/vendor/lib64/egl/libEGL_adreno.so
+7f840c2000-7f840c4000 rw-p 000d1000 b3:18 444                            /system/lib64/libGLES_trace.so
+7f86161000-7f86170000 ---p 00000000 00:00 0 
+7f7a6aa000-7f7a6bb000 r-xp 00000000 b3:18 1099                           /system/vendor/lib64/egl/libGLESv2_adreno.so
+7f83fc6000-7f83fe3000 r-xp 00000000 b3:18 2088                           /system/lib64/libhwgl.so
+7f854a3000-7f854a9000 rw-p 00000000 00:00 0 
+7f78b9e000-7f78ba1000 r--p 00000000 b3:18 226                            /system/fonts/NotoSansSundanese-Regular.ttf
+7f6d906000-7f6d909000 r--p 00024000 b3:18 4368                           /system/lib64/libkeymaster1.so
+7f83fc4000-7f83fc5000 rw-p 00005000 b3:18 2185                           /system/lib64/libwpa_client.so
+7f7b648000-7f7b66d000 r--p 0033a000 b3:18 4507                           /system/vendor/lib64/egl/libESXGLESv2_adreno.so
+7f84b1d000-7f84b22000 rw-p 00439000 b3:18 455                            /system/lib64/libpdfium.so
+7f7b67e000-7f7b6b0000 r-xp 00000000 b3:18 4506                           /system/vendor/lib64/egl/libESXGLESv1_CM_adreno.so
+7f83fab000-7f83faf000 rw-p 00000000 00:00 0 
+7f84bcd000-7f84bce000 rw-p 00050000 b3:18 2032                           /system/lib64/libharfbuzz_ng.so
+7f7a6cb000-7f7a6cc000 rw-p 00011000 b3:18 1099                           /system/vendor/lib64/egl/libGLESv2_adreno.so
+7f845b9000-7f845bf000 r--p 0009e000 b3:18 2015                           /system/lib64/libhwui.so
+7f7b93f000-7f7b941000 r-xp 00000000 b3:18 2219                           /system/lib64/libqmi_nv_api.so
+7f8620b000-7f8620d000 rw-p 00031000 b3:18 671                            /system/bin/linker64
+7f845dd000-7f845ea000 r-xp 00000000 b3:18 4361                           /system/lib64/libhwextdevice.so
+7f8556a000-7f8556b000 rw-p 00000000 00:00 0 
+7f85ef2000-7f85f2e000 r-xp 00000000 b3:18 2141                           /system/lib64/libwilhelm.so
+7f85c7e000-7f85c7f000 rw-p 00023000 b3:18 2261                           /system/lib64/libexpat.so
+7f837bb000-7f837d8000 rw-p 008bd000 b3:18 4334                           /system/lib64/lib_k3_ffmpeg.so
+7f845ff000-7f84600000 rw-p 00016000 b3:18 4361                           /system/lib64/libhwextdevice.so
+7f8463a000-7f8463b000 rw-p 00002000 b3:18 2225                           /system/lib64/libprocessgroup.so
+7f7a584000-7f7a585000 r--p 0000b000 b3:18 4504                           /system/vendor/lib64/egl/eglSubDriverAndroid.so
+7f860b3000-7f860be000 r--p 0016d000 b3:18 458                            /system/lib64/libandroid_runtime.so
+7f846b3000-7f846b4000 rw-p 00002000 b3:18 2239                           /system/lib64/libnetd_client.so
+7f78d06000-7f78d2c000 r--p 00000000 b3:18 1681                           /system/fonts/NotoSansSinhala-Bold.ttf
+7f81d7d000-7f81d80000 rw-p 00000000 00:00 0 
+7f83eb1000-7f83eb2000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f78baf000-7f78bb3000 r--p 00000000 b3:18 4198                           /system/fonts/NotoSansNewTaiLue-Regular.ttf
+7f83f18000-7f83f19000 rw-p 00059000 b3:18 2195                           /system/lib64/libRS.so
+7f6d915000-7f6d925000 ---p 00000000 00:00 0 
+7f82eee000-7f82eef000 rw-p 00004000 b3:18 2243                           /system/lib64/libpowermanager.so
+7f6dafb000-7f6db00000 r--p 00070000 b3:18 2165                           /system/lib64/libmedia_jni.so
+7f85365000-7f85375000 ---p 00000000 00:00 0 
+7f78fd7000-7f78ff6000 r--p 00000000 b3:18 1754                           /system/fonts/NotoSansDevanagariUI-Regular.ttf
+7f85361000-7f85362000 rw-p 00002000 b3:18 2008                           /system/lib64/libhardware.so
+7f84500000-7f84510000 ---p 00000000 00:00 0 
+7f842a8000-7f842a9000 r--p 00008000 b3:18 4345                           /system/lib64/libbase.so
+7f6d925000-7f6d926000 r--p 0000b000 b3:18 4369                           /system/lib64/libkeymaster_messages.so
+7f7b2b9000-7f7b2ed000 r--p 00b82000 b3:18 4537                           /system/vendor/lib64/libllvm-glnext.so
+7f83d43000-7f83d60000 r-xp 00000000 b3:18 2046                           /system/lib64/libvorbisidec.so
+5563437000-5563438000 rw-p 00005000 b3:18 731                            /system/bin/app_process64
+7f86203000-7f86204000 ---p 00000000 00:00 0 
+7f84661000-7f84663000 r--p 00016000 b3:18 2089                           /system/lib64/libminikin.so
+7f79061000-7f79066000 r--p 00000000 b3:18 1734                           /system/fonts/NotoSansHebrew-Bold.ttf
+7f82e57000-7f82e63000 r-xp 00000000 b3:18 2248                           /system/lib64/libcommon_time_client.so
+7f7a6f9000-7f7a6fa000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f82dd0000-7f82de0000 ---p 00000000 00:00 0 
+7f6da62000-7f6da7f000 r-xp 00000000 b3:18 2040                           /system/lib64/libmtp.so
+7f84225000-7f84226000 r--p 0001a000 b3:18 2107                           /system/lib64/libunwind.so
+7f78952000-7f78b7c000 r--p 00000000 b3:18 1636                           /system/fonts/Jomolhari.ttf
+7f85cde000-7f85cdf000 r--p 00001000 b3:18 2148                           /system/lib64/libmemtrack.so
+7f78c7b000-7f78c96000 r--p 00000000 b3:18 1756                           /system/fonts/NotoSansMyanmar-Bold.ttf
+7f79738000-7f79747000 ---p 00000000 00:00 0 
+7f7ba09000-7f7ba0a000 r--p 00003000 b3:18 460                            /system/lib64/libdrmbitmap.huawei.so
+7f7a70c000-7f7a70d000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f78cb9000-7f78cc1000 r--p 00000000 b3:18 239                            /system/fonts/SmartZawgyi.ttf
+7f78b8e000-7f78b9a000 r--p 00000000 b3:18 4204                           /system/fonts/NotoSansSyriacEstrangela-Regular.ttf
+7f75e39000-7f75e4a000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f83f75000-7f83f76000 r--p 00019000 b3:18 2321                           /system/lib64/libpcre.so
+7f84681000-7f84682000 rw-p 00011000 b3:18 2164                           /system/lib64/libsoundtrigger.so
+7f84b6c000-7f84b6d000 rw-p 0001c000 b3:18 2133                           /system/lib64/libz.so
+7f846b2000-7f846b3000 r--p 00001000 b3:18 2239                           /system/lib64/libnetd_client.so
+7f78c05000-7f78c07000 r--p 00000000 b3:18 182                            /system/fonts/NotoSansBuhid-Regular.ttf
+7f7d5af000-7f7d677000 rw-p 00000000 00:04 14437                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f76a00000-7f76a03000 r--p 00000000 b3:18 180                            /system/fonts/NotoSansTaiLe-Regular.ttf
+7f7b9fa000-7f7ba09000 ---p 00000000 00:00 0 
+7f83f48000-7f83f4a000 r--p 0000b000 b3:18 2028                           /system/lib64/libnbaio.so
+7f76039000-7f76083000 r--p 00000000 b3:18 1753                           /system/fonts/RobotoCondensed-Regular.ttf
+7f7b67d000-7f7b67e000 rw-p 00000000 00:00 0 
+7f8613c000-7f8613d000 rw-p 0000b000 b3:18 2227                           /system/lib64/liblog.so
+7f8620d000-7f86211000 rw-p 00000000 00:00 0 
+7f83f66000-7f83f75000 ---p 00000000 00:00 0 
+7f804f4000-7f80514000 rw-p 00000000 00:04 9465                           /dev/ashmem/dalvik-rosalloc page map (deleted)
+7f788ec000-7f788f0000 r--p 00000000 b3:18 206                            /system/fonts/NotoSansTifinagh-Regular.ttf
+7f861a2000-7f861ca000 r--s 00000000 00:0c 1907                           /dev/__properties__
+7f83ff4000-7f840c1000 r-xp 00000000 b3:18 444                            /system/lib64/libGLES_trace.so
+7f84663000-7f84664000 rw-p 00018000 b3:18 2089                           /system/lib64/libminikin.so
+7f83dbc000-7f83dcb000 ---p 00000000 00:00 0 
+7f7b9dd000-7f7b9de000 r--p 00001000 b3:18 2306                           /system/lib64/hw/memtrack.msm8916.so
+7f7b766000-7f7b775000 ---p 00000000 00:00 0 
+7f85a75000-7f85a76000 rw-p 00000000 00:00 0 
+7f78bb3000-7f78bb7000 r--p 00000000 b3:18 184                            /system/fonts/NotoSansMeeteiMayek-Regular.ttf
+7f7a727000-7f7a728000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7f83f99000-7f83fa9000 ---p 00000000 00:00 0 
+7f6da61000-7f6da62000 rw-p 00000000 00:00 0 
+7f7906b000-7f7908d000 r--p 00000000 b3:18 198                            /system/fonts/NotoSansEthiopic-Bold.ttf
+7f83e1c000-7f83e2c000 ---p 00000000 00:00 0 
+7f78f35000-7f78f3d000 r--p 00000000 b3:18 223                            /system/fonts/NotoSansGurmukhi-Bold.ttf
+7f78bbd000-7f78bc0000 r--p 00000000 b3:18 222                            /system/fonts/NotoSansLimbu-Regular.ttf
+7f78e11000-7f78e2d000 r--p 00000000 b3:18 1663                           /system/fonts/NotoSansTeluguUI-Regular.ttf
+7f841c2000-7f841d2000 ---p 00000000 00:00 0 
+7f78c07000-7f78c0b000 r--p 00000000 b3:18 210                            /system/fonts/NotoSansBatak-Regular.ttf
+7f7b6c0000-7f7b6c1000 rw-p 00033000 b3:18 4506                           /system/vendor/lib64/egl/libESXGLESv1_CM_adreno.so
+7f78f45000-7f78f61000 r--p 00000000 b3:18 207                            /system/fonts/NotoSansGujaratiUI-Bold.ttf
+7f85a50000-7f85a52000 rw-p 004d6000 b3:18 2217                           /system/lib64/libskia.so
+7f7971b000-7f7971c000 r--p 00000000 b3:18 2073                           /system/lib64/libjnigraphics.so
+7f83d72000-7f83d75000 r-xp 00000000 b3:18 2319                           /system/lib64/libstagefright_yuv.so
+7f854a9000-7f85566000 r-xp 00000000 b3:18 2037                           /system/lib64/libsqlite.so
+7f6d771000-7f6d772000 r--p 00003000 b3:18 3764                           /system/vendor/lib64/libidl.so
+7f790af000-7f790cc000 r--p 00000000 b3:18 4191                           /system/fonts/NotoNaskhArabicUI-Bold.ttf
+7f83e61000-7f83e70000 ---p 00000000 00:00 0 
+7f82d74000-7f82d78000 rw-p 00fbe000 b3:18 2199                           /system/lib64/libLLVM.so
+7f85c17000-7f85c18000 r--p 00010000 b3:18 2010                           /system/lib64/libui.so
+7f7b923000-7f7b924000 rw-p 00001000 b3:18 4005                           /system/vendor/lib64/libqmi_common_so.so
+7f85b27000-7f85b37000 ---p 00000000 00:00 0 
+7f81d83000-7f81d85000 rw-p 00000000 00:04 9476                           /dev/ashmem/dalvik-mark sweep sweep array free buffer (deleted)
+7f81772000-7f81d57000 r-xp 00000000 b3:18 2235                           /system/lib64/libart.so
+7f6d7c1000-7f6d7d1000 ---p 00000000 00:00 0 
+7f6d762000-7f6d771000 ---p 00000000 00:00 0 
+7f842ae000-7f842bd000 ---p 00000000 00:00 0 
+7f85be0000-7f85bf0000 ---p 00000000 00:00 0 
+7f7b9cb000-7f7b9cc000 rw-p 00008000 b3:18 2071                           /system/lib64/libpowergenie_native3.so
+7f7b8fe000-7f7b8ff000 r--p 00003000 b3:18 3472                           /system/vendor/lib64/libqmi_encdec.so
+7f82ec7000-7f82ec8000 rw-p 0000a000 b3:18 2035                           /system/lib64/libstagefright_avc_common.so
+7f841d5000-7f841e4000 ---p 00000000 00:00 0 
+7f85d35000-7f85d45000 ---p 00000000 00:00 0 
+7f7970b000-7f7970c000 r-xp 00000000 b3:18 2073                           /system/lib64/libjnigraphics.so
+7f85c6c000-7f85c7c000 ---p 00000000 00:00 0 
+7f85c18000-7f85c19000 rw-p 00011000 b3:18 2010                           /system/lib64/libui.so
+7f86106000-7f86115000 ---p 00000000 00:00 0 
+7f845aa000-7f845b9000 ---p 00000000 00:00 0 
+7f84299000-7f842a8000 ---p 00000000 00:00 0 
+7f6d736000-7f6d737000 rw-p 00001000 b3:18 2132                           /system/lib64/libhwdeviceinfo.so
+7f82de0000-7f82de1000 r--p 0004a000 b3:18 2023                           /system/lib64/libbcinfo.so
+7f84627000-7f84628000 rw-p 00003000 b3:18 2171                           /system/lib64/libnativebridge.so
+7f7b75c000-7f7b75d000 rw-p 00000000 00:00 0 
+7f788f0000-7f78952000 r--p 00000000 b3:18 4206                           /system/fonts/NotoSansTibetan-Regular.ttf
+7f7a70a000-7f7a70b000 r--p 00000000 b3:18 2202                           /system/lib64/libqdMetaData.so
+7f840c5000-7f840fe000 r-xp 00000000 b3:18 4545                           /system/vendor/lib64/libqc-opt.so
+7f7b8bc000-7f7b8be000 r--p 0000f000 b3:18 3694                           /system/vendor/lib64/libdsutils.so
+7f791bd000-7f7920c000 r--p 00000000 b3:18 1708                           /system/fonts/Roboto-BlackItalic.ttf
+7f85c32000-7f85c3a000 r-xp 00000000 b3:18 2072                           /system/lib64/libnativehelper.so
+7f84c29000-7f84c2a000 r--p 00036000 b3:18 2146                           /system/lib64/libjpeg.so
+7f6da4f000-7f6da5f000 ---p 00000000 00:00 0 
+7f846b4000-7f846c6000 r-xp 00000000 b3:18 2019                           /system/lib64/libimg_utils.so
+7f78dcd000-7f78de1000 r--p 00000000 b3:18 1635                           /system/fonts/NotoSansKannada-Bold.ttf
+7f82e54000-7f82e55000 rw-p 00063000 b3:18 2183                           /system/lib64/libbcc.so
+7f6d963000-7f6d973000 ---p 00000000 00:00 0 
+7f84227000-7f84290000 rw-p 00000000 00:00 0 
+7f85b77000-7f85b78000 rw-p 00032000 b3:18 2119                           /system/lib64/libinput.so
+7f8532e000-7f8532f000 rw-p 00016000 b3:18 2276                           /system/lib64/libselinux.so
+7f7b93d000-7f7b93e000 r--p 00009000 b3:18 3567                           /system/vendor/lib64/libqmi_cci.so
+7f85ab1000-7f85ac0000 ---p 00000000 00:00 0 
+7f6d797000-7f6d7a2000 r--p 00020000 b3:18 3619                           /system/vendor/lib64/libqmiservices.so
+7f82ed8000-7f82ed9000 r--p 00000000 b3:18 2245                           /system/lib64/libstagefright_enc_common.so
+7f7b2f5000-7f7b30d000 rw-p 00000000 00:00 0 
+7f83e2c000-7f83e2d000 r--p 0004b000 b3:18 2085                           /system/lib64/libopus.so
+74408000-767fa000 r-xp 02692000 b3:1a 97925                              /data/dalvik-cache/arm64/system@framework@boot.oat
+7f85b3c000-7f85b60000 r-xp 00000000 b3:18 2119                           /system/lib64/libinput.so
+7f75e4a000-7f75e8b000 r--p 00000000 b3:18 1738                           /system/fonts/NotoSerif-BoldItalic.ttf
+7f7d4e0000-7f7d4e3000 rw-p 0005b000 b3:18 459                            /system/lib64/libjavacore.so
+7f853bb000-7f853bc000 r--p 0000c000 b3:18 2257                           /system/lib64/libGLESv1_CM.so
+7f78c62000-7f78c7b000 r--p 00000000 b3:18 1682                           /system/fonts/NotoSansMyanmarUI-Regular.ttf
+7f85d45000-7f85d46000 r--p 00038000 b3:18 2196                           /system/lib64/libm.so
+7f6d9bd000-7f6d9bf000 r--p 00026000 b3:18 2159                           /system/lib64/libjavacrypto.so
+7f6c725000-7f6cf25000 rw-p 00000000 00:04 13868                          /dev/ashmem/dalvik-allocspace main rosalloc space mark-bitmap 3 (deleted)
+7f84d3e000-7f84d3f000 rw-p 0010e000 b3:18 2024                           /system/lib64/libmedia.so
+7f7b97d000-7f7b97e000 rw-p 00000000 00:00 0                              [anon:linker_alloc_64]
+7f78d2c000-7f78d53000 r--p 00000000 b3:18 1964                           /system/fonts/NotoSansSinhala-Regular.ttf
+7f82e55000-7f82e56000 r--p 00000000 00:00 0 
+7f79825000-7f79826000 r--p 00005000 b3:18 2111                           /system/lib64/libmemalloc.so
+7f841e9000-7f841f8000 ---p 00000000 00:00 0 
+7f78db9000-7f78dcd000 r--p 00000000 b3:18 212                            /system/fonts/NotoSansKannadaUI-Regular.ttf
+7f8418b000-7f8418c000 rw-p 0006c000 b3:18 2222                           /system/lib64/libft2.so
+7f86208000-7f8620a000 r-xp 00000000 00:00 0                              [vdso]
+7f6d8d4000-7f6d8f7000 r-xp 00000000 b3:18 4368                           /system/lib64/libkeymaster1.so
+7f85ace000-7f85acf000 rw-p 00049000 b3:18 468                            /system/lib64/libcamera_client.so
+7f7b952000-7f7b954000 r-xp 00000000 b3:18 2218                           /system/lib64/libqmi_oem_api.so
+7f85173000-7f85175000 r--p 00039000 b3:18 462                            /system/lib64/libssl.so
+7f85125000-7f85126000 rw-p 0019e000 b3:18 2122                           /system/lib64/libicuuc.so
+7f79748000-7f79749000 rw-p 0001b000 b3:18 2174                           /system/lib64/libcompiler_rt.so
+7f78cd9000-7f78ce1000 r--p 00000000 b3:18 241                            /system/fonts/NotoSansLao-Regular.ttf
+7f7b2ed000-7f7b2f5000 rw-p 00bb6000 b3:18 4537                           /system/vendor/lib64/libllvm-glnext.so

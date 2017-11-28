@@ -1,0 +1,107 @@
+7f80e1c000-7f80e1d000 ---p 00000000 00:00 0 
+7f81029000-7f8102a000 ---p 00000000 00:00 0 
+7f809f4000-7f809f6000 rw-p 00000000 00:04 64740                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f6ae44000-7f6af47000 rw-p 00000000 00:00 0                              [stack:8172]
+7f80f20000-7f80f22000 rw-p 00000000 00:04 62317                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7bc4f000-7f7bc9a000 r--p 00000000 b3:18 1749                           /system/fonts/Roboto-Regular.ttf
+7f80f24000-7f81027000 rw-p 00000000 00:00 0                              [stack:8038]
+7f81133000-7f81137000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f7bd18000-7f7be1b000 rw-p 00000000 00:00 0                              [stack:8053]
+7f7bad7000-7f7bad9000 rw-p 00000000 00:04 66581                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f81236000-7f81238000 rw-p 00000000 00:04 62313                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7bad0000-7f7bad2000 rw-p 00000000 00:04 66094                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7bd17000-7f7bd18000 ---p 00000000 00:00 0 
+7f6b7ff000-7f6bf9b000 r--p 00000000 b3:18 16422                          /system/priv-app/Email/oat/arm64/Email.odex
+7f80b03000-7f80b04000 ---p 00000000 00:00 0 
+7f8102b000-7f8112e000 rw-p 00000000 00:00 0                              [stack:8037]
+7f7bad3000-7f7bad7000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f7baea000-7f7baeb000 ---p 00000000 00:00 0 
+7f80e17000-7f80e1b000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f8123f000-7f8133c000 rw-p 00000000 00:00 0                              [stack:8032]
+76973000-7697c000 rw-p 00001000 00:04 13869                              /dev/ashmem/dalvik-non moving space (deleted)
+7f809ff000-7f80afc000 rw-p 00000000 00:00 0                              [stack:8042]
+7f80c02000-7f80d00000 r--p 00000000 00:0c 3520                           /dev/binder
+7f7baca000-7f7bace000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f7bb4c000-7f7bc4f000 rw-p 00000000 00:00 0                              [stack:8051]
+7f809ef000-7f809f0000 ---p 00000000 00:00 0 
+7f6c724000-7f6c725000 rw-p 00f25000 b3:18 16422                          /system/priv-app/Email/oat/arm64/Email.odex
+7f809ed000-7f809ef000 rw-p 00000000 00:04 62330                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7bac9000-7f7baca000 ---p 00000000 00:00 0 
+7f7bb4b000-7f7bb4c000 ---p 00000000 00:00 0 
+7f809e9000-7f809ed000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f809f0000-7f809f4000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f80e1b000-7f80e1c000 ---p 00000000 00:00 0 
+7f7b79a000-7f7b79b000 ---p 00000000 00:00 0 
+7f8123e000-7f8123f000 ---p 00000000 00:00 0 
+7f80f23000-7f80f24000 ---p 00000000 00:00 0 
+7f81139000-7f81236000 rw-p 00000000 00:00 0                              [stack:8036]
+7f7babd000-7f7babe000 ---p 00000000 00:00 0 
+7f80e1d000-7f80f20000 rw-p 00000000 00:00 0                              [stack:8039]
+7f6ad3f000-7f6ae42000 rw-p 00000000 00:00 0                              [stack:8185]
+7f8102a000-7f8102b000 ---p 00000000 00:00 0 
+7f809f6000-7f809f8000 rw-p 00000000 00:04 62904                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f6bf9b000-7f6c724000 r-xp 0079c000 b3:18 16422                          /system/priv-app/Email/oat/arm64/Email.odex
+7f80d05000-7f80d06000 ---p 00000000 00:00 0 
+7f81239000-7f8123d000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f7b79b000-7f7b89e000 rw-p 00000000 00:00 0                              [stack:8050]
+7f80514000-7f809d4000 r--s 00081000 b3:18 294                            /system/priv-app/Email/Email.apk
+12e07000-1ec00000 ---p 00207000 00:04 9458                               /dev/ashmem/dalvik-main space (deleted)
+7f80d0f000-7f80d10000 ---p 00000000 00:00 0 
+7f80afc000-7f80afe000 rw-p 00000000 00:04 62318                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7bc9a000-7f7bcab000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f7b799000-7f7b79a000 ---p 00000000 00:00 0 
+7f8123d000-7f8123e000 ---p 00000000 00:00 0 
+7f80e16000-7f80e17000 ---p 00000000 00:00 0 
+7f80d06000-7f80d0a000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f809fd000-7f809fe000 ---p 00000000 00:00 0 
+7f7ba9d000-7f7babd000 rw-p 00000000 00:04 67609                          /dev/ashmem/dalvik-LinearAlloc (deleted)
+7f81027000-7f81029000 rw-p 00000000 00:04 62316                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7babe000-7f7bac2000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f7bd16000-7f7bd17000 ---p 00000000 00:00 0 
+7f809e6000-7f809e8000 rw-p 00000000 00:04 50272                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7bb4a000-7f7bb4b000 ---p 00000000 00:00 0 
+7f81130000-7f81132000 rw-p 00000000 00:04 64297                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f7baef000-7f7bb39000 r--p 00000000 b3:18 1709                           /system/fonts/Roboto-Medium.ttf
+7f80d01000-7f80d05000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f6ad3e000-7f6ad3f000 ---p 00000000 00:00 0 
+32c00000-3ec00000 rw-p 00000000 00:04 9459                               /dev/ashmem/dalvik-main space 1 (deleted)
+7f7be2f000-7f7be3b000 rw-p 00000000 00:04 67924                          /dev/ashmem/dalvik-rosalloc page map (deleted)
+7f809e8000-7f809e9000 ---p 00000000 00:00 0 
+7f80b05000-7f80c02000 rw-p 00000000 00:00 0                              [stack:8041]
+7f81238000-7f81239000 ---p 00000000 00:00 0 
+7f809fe000-7f809ff000 ---p 00000000 00:00 0 
+7f7bcab000-7f7bcf6000 r--p 00000000 b3:18 1686                           /system/fonts/Roboto-Light.ttf
+7f809f9000-7f809fd000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f6af47000-7f6b7ff000 r--p 00000000 b3:18 1633                           /system/fonts/DroidSansChinese.ttf
+7f80d10000-7f80d11000 ---p 00000000 00:00 0 
+7f80d0b000-7f80d0f000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f80b04000-7f80b05000 ---p 00000000 00:00 0 
+7f809d4000-7f809e5000 r--s 005b8000 b3:18 294                            /system/priv-app/Email/Email.apk
+7f80d0a000-7f80d0b000 ---p 00000000 00:00 0 
+7f80d11000-7f80e14000 rw-p 00000000 00:00 0                              [stack:8040]
+7f6ac38000-7f6ac39000 ---p 00000000 00:00 0 
+7f8133c000-7f8133d000 rw-s 00000000 b3:1a 277442                         /data/ctrl_socket/ctrlSocketTag
+12c00000-12e07000 ---p 00000000 00:04 9458                               /dev/ashmem/dalvik-main space (deleted)
+7f6ac3a000-7f6ad3d000 rw-p 00000000 00:00 0                              [stack:8197]
+7f6ad3d000-7f6ad3e000 ---p 00000000 00:00 0 
+7f7bb39000-7f7bb4a000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f7bad9000-7f7baea000 rw-p 00000000 00:00 0                              [anon:libc_malloc]
+7f80e14000-7f80e16000 rw-p 00000000 00:04 62898                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f80afe000-7f80aff000 ---p 00000000 00:00 0 
+7f6ac39000-7f6ac3a000 ---p 00000000 00:00 0 
+7f7bad2000-7f7bad3000 ---p 00000000 00:00 0 
+7f8112e000-7f81130000 rw-p 00000000 00:04 62315                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f6ae42000-7f6ae43000 ---p 00000000 00:00 0 
+55865d2000-5586650000 rw-p 00000000 00:00 0                              [heap]
+7f809f8000-7f809f9000 ---p 00000000 00:00 0 
+7f80aff000-7f80b03000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f80f22000-7f80f23000 ---p 00000000 00:00 0 
+7f7baeb000-7f7baef000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7f7bcf6000-7f7bd16000 rw-p 00000000 00:04 27555                          /dev/ashmem/dalvik-LinearAlloc (deleted)
+7f7bace000-7f7bad0000 rw-p 00000000 00:04 66103                          /dev/ashmem/dalvik-indirect ref table (deleted)
+7f6ae43000-7f6ae44000 ---p 00000000 00:00 0 
+7f81132000-7f81133000 ---p 00000000 00:00 0 
+7f80d00000-7f80d01000 ---p 00000000 00:00 0 
+7f81137000-7f81138000 ---p 00000000 00:00 0 
+7697c000-799fc000 ---p 0000a000 00:04 13869                              /dev/ashmem/dalvik-non moving space (deleted)
+7f81138000-7f81139000 ---p 00000000 00:00 0 
