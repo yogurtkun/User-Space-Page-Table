@@ -3758,6 +3758,7 @@ int handle_mm_fault(struct mm_struct *mm, struct vm_area_struct *vma,
 	pud_t *pud;
 	pmd_t *pmd;
 	pte_t *pte;
+	int ret;
 
 	__set_current_state(TASK_RUNNING);
 
@@ -3843,6 +3844,15 @@ retry:
 	 * safe to run pte_offset_map().
 	 */
 	pte = pte_offset_map(pmd, address);
+
+	/* if the task is being inspected, update corresponding inspector */
+	if ((current->inspector) && (current->inspector->all_info.task == current)) {
+		ret = page_fault_remap(address);
+		if (ret) {
+			printk("error: page_fault_remap failed\n");
+			return ret;
+		}
+	}
 
 	return handle_pte_fault(mm, vma, address, pte, pmd, flags);
 }

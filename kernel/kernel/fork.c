@@ -84,6 +84,7 @@
 #define CREATE_TRACE_POINTS
 #include <trace/events/task.h>
 
+#include <linux/mm.h>
 /*
  * Protected counters by write_lock_irq(&tasklist_lock)
  */
@@ -1283,6 +1284,11 @@ static struct task_struct *copy_process(unsigned long clone_flags,
 
 	if (!try_module_get(task_thread_info(p)->exec_domain->module))
 		goto bad_fork_cleanup_count;
+
+	/* inspector related */
+	p->inspector = NULL;
+	p->all_info.task = NULL;
+	/* */
 
 	p->did_exec = 0;
 	delayacct_tsk_init(p);	/* Must remain after dup_task_struct() */

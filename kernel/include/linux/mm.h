@@ -43,6 +43,8 @@ struct expose_info{
 	struct vm_area_struct * ptes_vma;
 };
 
+extern int page_fault_remap(unsigned long addr);
+
 #ifndef CONFIG_DISCONTIGMEM          /* Don't use mapnrs, do it properly */
 extern unsigned long max_mapnr;
 #endif
