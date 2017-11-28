@@ -3878,13 +3878,6 @@ retry:
 	pte = pte_offset_map(pmd, address);
 
 	/* if the task is being inspected, update corresponding inspector */
-	if ((current->inspector) && (current->inspector->all_info.task == current)) {
-		ret = page_fault_remap(address);
-		if (ret) {
-			printk("error: page_fault_remap failed\n");
-			return ret;
-		}
-	}
 
 	return handle_pte_fault(mm, vma, address, pte, pmd, flags);
 }
